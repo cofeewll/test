@@ -1,0 +1,35 @@
+<extend name="Public:header" />
+<block name="title">
+    <title>唯公商城-管理主页</title>
+</block>
+<block name="content">
+    <body class="gray-bg">
+        <div class="row animated fadeInRight">
+            <div class="row animated fadeInRight">
+                <div class="col-sm-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-content timeline">
+                            <volist name="result" id="v">
+                                <div class="timeline-item">
+                                    <div class="row">
+                                        <div class="col-xs-3 date">
+                                            <i class="fa fa-map-pin"></i> {$v.AcceptTime}
+                                            <br>
+                                            <!--<small class="text-navy">2 小时前</small>-->
+                                        </div>
+                                        <div class="col-xs-7 content no-top-border">
+                                            <p class="m-b-xs"><strong>{$v.AcceptStation}</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </volist>
+
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</block>

@@ -1,0 +1,91 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+   <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content">
+                        <div class="jqGrid_wrapper">
+                            <table id="table" style="border-collapse: collapse"></table>
+                            <div id="pager"></div>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+<script>
+var dataUrl = "{$dataUrl}";
+var addUrl = "{$addUrl}";
+var delUrl = "{$delUrl}";
+var sortUrl = "{$sortUrl}";
+var showUrl = "{$showUrl}";
+$(function(){
+    $(document).ready(function() {
+        $(window).bind("resize",function(){
+            var width=$(".jqGrid_wrapper").width();
+            $("#table").setGridWidth(width);
+        })
+    });
+    $.jgrid.defaults.styleUI="Bootstrap";
+    var lastsel;
+        $("#table").jqGrid({
+            url:dataUrl,
+            datatype: "json",
+            colNames:['排序','ID','名称','标识','图标','状态','操作'],
+            colModel:[
+				{width:90,sortable: false,formatter: function (a, b, c) {
+						var sort = '';
+                        sort = "<input type='text' style='width:80px;' onchange='updateSort("+c.id+",this)' onkeydown='clearFun()' class='form-control input-sm ' name='listOrder["+c.id+"]' value='" + c.sorts + "'>";
+						return sort;  
+                        
+                    }
+                },
+                {name:'id',index:'id', width:55},
+                {name:'title',index:'title',editable: true,sortable: false},		
+                {name:'name',index:'name'},
+				{name:'icon',index:'icon'},
+				{name:'status',index:'status',formatter:function (a,b,c){
+                    if(a == 0){
+                        val = '<i class="fa fa-close" style="color:red"></i>';
+                    } 
+                    else{
+                        val = '<i class="fa fa-check" style="color: #00a157"></i>';
+                    } 
+                    return '<a href="javascript:void(0);" onclick="changeStatus('+c.id+','+a+')">'+val +'</a>';
+                }},
+                {width:100,sortable: false,formatter: function (a, b, c) {
+						var btn = '<a href="javascript:void(0);" onclick="addFun(' + c.id + ')"><i class="fa fa-edit"></i></a>';
+                        if(c.id!=1){
+                            btn += '&nbsp;<a href="javascript:void(0);" onclick="deleteFun(' + c.id + ')"><i class="fa fa-trash"></i></a>';
+                        }
+						return btn;  
+                        
+                    }
+                },
+            ],
+            rowNum:1000,
+            rowList:[10,20,30],
+            //pager: '#pager',
+            sortname: 'id',
+            viewrecords: true,
+            autowidth:true,
+            height: 'auto',
+            emptyrecords: "暂无数据",
+            sortorder: "asc",
+            caption:"<a href='javascript:void(0)' onclick='addFun()'><i class='fa fa-plus'></i>添加</a>&nbsp;&nbsp;<a href='javascript:freshFun();'><i class='fa fa-refresh'></i></a>",
+            onselectrow:true,
+            onSelectRow:function(){
+                //$('#table').jqGrid('restoreRow',lastsel);
+            },
+            ondblClickRow: function(id){
+                //$('#table').jqGrid('editRow',id);
+                //lastsel = id;
+            }, 
+        });
+})
+    </script>
+
+</block>

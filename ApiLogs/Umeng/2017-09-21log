@@ -1,0 +1,16 @@
+执行日期：2017-09-21 17:06:58
+Http code:400 details:{"ret":"FAIL","data":{"error_code":"2004","appkey":"59154f81b27b0a6a9500006e","ip":"123.149.209.128"}}
+
+
+执行日期：2017-09-21 17:47:30
+[AndUnicast推送失败] exception:Http code:400 details:{"ret":"FAIL","data":{"error_code":"2004","appkey":"59154f81b27b0a6a9500006e","ip":"123.149.209.128"}}
+
+
+执行日期：2017-09-21 17:53:42
+[AndListcast推送失败] exception:Http code:400 details:{"ret":"FAIL","data":{"error_code":"2004","appkey":"59154f81b27b0a6a9500006e","ip":"123.149.209.128"}}
+
+
+执行日期：2017-09-21 17:59:51
+[AndBroadcast推送失败] exception:Http code:400 details:{"ret":"FAIL","data":{"error_code":"2004","appkey":"59154f81b27b0a6a9500006e","ip":"123.149.209.128"}}
+
+

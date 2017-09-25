@@ -1,0 +1,1 @@
+sc stop "memcached_11211"

@@ -1,0 +1,90 @@
+[ 2017-09-08T17:52:59+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-09-08T17:54:36+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-09-08T17:55:04+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-09-08T17:55:57+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-09-08T17:56:41+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-09-08T17:58:52+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-09-08T17:59:41+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+
+[ 2017-09-08T18:00:28+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+
+[ 2017-09-08T18:00:34+08:00 ] 127.0.0.1 /index.php/Api/Goods/getCates
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`fid`,`name`,`img` FROM `wg_goods_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+

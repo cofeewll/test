@@ -1,0 +1,129 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+   <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content">
+                        <form class="form-inline" id="form-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="name" id="name" style="width:150px;" placeholder="奖品名称">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="nickname" id="nickname" style="width:150px;" placeholder="用户名称">
+                            </div>
+                            <div class="input-group">
+                                <select class="form-control" name="type">
+                                    <option value="">奖品类型</option>
+                                    <option value="1">特殊奖</option>
+                                    <option value="0">金币</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <select class="form-control" name="isDeal">
+                                    <option value="">状态</option>
+                                    <option value="1">已派奖</option>
+                                    <option value="0">待派奖</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn-sm btn-primary" type="button" id ="search-btn" ><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                            <div class="input-group">
+                                <button class="btn-sm btn-primary " type="button" id="search-clear"><i class="fa fa-undo"></i></button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="jqGrid_wrapper">
+                            <table id="table" style="border-collapse: collapse"></table>
+                            <div id="pager"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+<script>
+var dataUrl = "{$dataUrl}";
+var delUrl = "{$delUrl}";
+var dealUrl = "{$dealUrl}";
+$(function(){
+    $(document).ready(function() {
+        $(window).bind("resize",function(){
+            var width=$(".jqGrid_wrapper").width();
+            $("#table").setGridWidth(width);
+        })
+    });
+    $.jgrid.defaults.styleUI="Bootstrap";
+    var lastsel;
+        $("#table").jqGrid({
+            url:dataUrl,
+            datatype: "json",
+            colNames:['ID','中奖用户','奖品名称','奖品类型','派奖状态','中奖时间','操作'],
+            colModel:[
+                {name:'id',index:'id', width:55,align:'center'},
+                {name:'nickname',index:'nickname',editable: false,sortable: false,align:'center'},
+                {name:'name',index:'name',editable: false,sortable: false,align:'center'},
+                {name:'type',index:'type',editable: false,sortable: false,align:'center'}, 
+                {name:'isDeal',index:'isDeal',editable: false,sortable: false,align:'center',formatter:function (a,b,c){
+                    if(a == 0){
+                        val = '<i class="fa fa-close" style="color:red"></i>';
+                    } 
+                    else{
+                        val = '<i class="fa fa-check" style="color:#00a157"></i>';
+                    } 
+                    return '<a href="javascript:void(0);">'+val +'</a>';
+                }},
+                {name:'createTime',index:'createTime',editable: false,sortable: true,align:'center'},  
+                {width:100,sortable: false,align:'center',formatter: function (a, b, c) {
+                    var btn ='';
+                        if(c.type == '特殊奖'){
+                            btn += '<a href="javascript:void(0);" onclick="dealFun(' + c.id + ')"><i title="派奖信息" class="fa fa-gift"></i></a>';
+                        }
+                        
+                        btn += '&nbsp;&nbsp;<a href="javascript:void(0);" onclick="deleteFun(' + c.id + ')"><i title="删除" class="fa fa-trash"></i></a>';
+                        
+                        return btn;  
+                    }
+                },
+            ],
+            rowNum:10,
+            rowList:[10,20,30],
+            pager: '#pager',
+            sortname: 'id',
+            viewrecords: true,
+            autowidth:true,
+            height: 'auto',
+            emptyrecords: "暂无数据",
+            sortorder: "desc",
+            caption:"中奖记录",
+            onselectrow:false,
+        });
+})
+
+        
+    </script>
+    <script type="text/javascript">
+        function dealFun(id){
+            url = dealUrl+'/id/'+id;
+            layer.open({
+                type: 2,
+                title: '编辑派奖信息',
+                shadeClose: true,
+                shade: 0.3,
+                area: ['80%', '95%'],
+                content: url, 
+                end: function () {
+                    $("#table").trigger("reloadGrid");
+                }
+            });
+        }
+    </script>
+
+</block>

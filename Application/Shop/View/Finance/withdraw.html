@@ -1,0 +1,81 @@
+<extend name="Public:header" />
+<block name="title">
+    <title>唯公商城-管理主页</title>
+</block>
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content" id="ibox-content">
+                        <div class="jqGrid_wrapper">
+                            <table id="table"></table>
+                            <div id="pager"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="__ADMIN__/js/plugins/layer/laydate/laydate.js"></script>
+    <script src="__ADMIN__/js/public.js"></script>
+    <script src="__ADMIN__/js/jqgrid.js"></script>
+    <script>
+        var jqgrid_coloumn=[
+
+            {label: '提现金额', name: 'setMoney', index: 'setMoney',  align: 'center',},
+            {label: '提现账户', name: 'type', index: 'type',  align: 'center',formatter:function(a,b,c){
+                if(a==1)return "支付宝";
+                if(a==2)return "微信";
+                if(a==3)return "银行卡";
+            }},
+            {label: '账号', name: 'account', index: 'account',  align: 'center',},
+            {label: '手续费', name: 'fee', index: 'fee',  align: 'center',},
+            {label: '状态', name: 'status', index: 'status',  align: 'center',formatter:function(a,b,c){
+                if(a==0)return "待审核";
+                if(a==1)return "同意提现";
+                if(a==2)return "拒绝提现";
+            }},
+            {label: '备注', name: 'remark', index: 'remark',  align: 'center',},
+            {label: '提现时间', name: 'addTime', index: 'addTime',  align: 'center',},
+
+        ];
+        var caption='<a  href="###" onclick="add_()"> <i class="fa fa-plus"></i>申请提现 </a>';
+        var reurl="{:U('withdraw')}";
+        var loadComplete=function(){};
+        var ondblClickRow=function(id){
+            var rowData = $('#table').getRowData(id);
+            layer.open({
+                type: 2,
+                title: '查看详细',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['1200px', '90%'],
+                content: "{:U('sdetail','','')}/id/"+rowData.id,
+                end:function(){
+                    $("#table").trigger("reloadGrid");
+                }
+            });
+        };
+        var onCellSelect=function(rowid, iCol, cellcontent, e){
+        };
+        var footerrow=false;
+        getGrid(jqgrid_coloumn,loadComplete,ondblClickRow,onCellSelect,"id",caption,reurl,footerrow);
+        function add_(){
+            layer.open({
+                type: 2,
+                title: '申请提现',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['1200px', '90%'],
+                content: "{:U('apply','','')}",
+                end:function(){
+                    $("#table").trigger("reloadGrid");
+                }
+            });
+        }
+    </script>
+    </body>
+</block>

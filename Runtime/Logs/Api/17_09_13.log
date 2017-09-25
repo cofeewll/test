@@ -1,0 +1,88 @@
+[ 2017-09-13T18:53:18+08:00 ] 127.0.0.1 /index.php/Api/Cart/addOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_address` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`receiver`,`phone`,`province`,`city`,`county`,`detail` FROM `wg_address` WHERE `uid` = 1 AND `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.status AS pstatus,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' AND c.id IN ('11','12','13','14') AND shop.status = 1 ORDER BY c.createTime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods_ship` WHERE `goodsId` = 1 AND `province` = '新疆维吾尔自治区' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods_ship` WHERE `goodsId` = 1 AND `province` = '新疆维吾尔自治区' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods_ship` WHERE `goodsId` = 5 AND `province` = '新疆维吾尔自治区' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wg_goods_ship` WHERE `goodsId` = 5 AND `province` = '新疆维吾尔自治区' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0040s ]
+SQL: SELECT `value` FROM `wg_config` WHERE `config` = 'buyScore' AND `flag` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: INSERT INTO `wg_orders` (`uid`,`address`,`realname`,`phone`,`status`,`orderSn`,`shopId`,`amount`,`goodsAmount`,`score`,`fee`,`createTime`,`oYear`,`oMonth`,`oDate`,`remark`) VALUES ('1','新疆维吾尔自治区郑州市金水区中州大道','小花','15903645369','0','2017091318531861991','1','42.00','22','22','20.00','1505299998','2017','9','13','hahah') [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [orderId] => 15
+            [goodsId] => 1
+            [shopId] => 1
+            [gsId] => 8
+            [number] => 1
+            [spec] => 颜色:蓝色 尺寸:S
+            [price] => 12.00
+            [addTime] => 1504195200
+            [status] => 1
+        )
+
+    [1] => Array
+        (
+            [orderId] => 15
+            [goodsId] => 1
+            [shopId] => 1
+            [gsId] => 7
+            [number] => 1
+            [spec] => 颜色:白色 尺寸:S
+            [price] => 10.00
+            [addTime] => 1504195200
+            [status] => 1
+        )
+
+)
+
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0040s ]
+SQL: INSERT INTO `wg_order_goods` (`orderId`,`goodsId`,`shopId`,`gsId`,`number`,`spec`,`price`,`addTime`,`status`) VALUES ('15','1','1','8','1','颜色:蓝色 尺寸:S','12.00','1504195200','1'),('15','1','1','7','1','颜色:白色 尺寸:S','10.00','1504195200','1') [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_orders` (`uid`,`address`,`realname`,`phone`,`status`,`orderSn`,`shopId`,`amount`,`goodsAmount`,`score`,`fee`,`createTime`,`oYear`,`oMonth`,`oDate`,`remark`) VALUES ('1','新疆维吾尔自治区郑州市金水区中州大道','小花','15903645369','0','2017091318531848451','2','200.00','180','180','20.00','1505299998','2017','9','13','kkkkk') [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [orderId] => 16
+            [goodsId] => 5
+            [shopId] => 2
+            [gsId] => 16
+            [number] => 2
+            [spec] => 尺寸:37
+            [price] => 40.00
+            [addTime] => 1504195200
+            [status] => 1
+        )
+
+    [1] => Array
+        (
+            [orderId] => 16
+            [goodsId] => 5
+            [shopId] => 2
+            [gsId] => 17
+            [number] => 2
+            [spec] => 尺寸:38
+            [price] => 50.00
+            [addTime] => 1504195200
+            [status] => 1
+        )
+
+)
+
+SQL: INSERT INTO `wg_order_goods` (`orderId`,`goodsId`,`shopId`,`gsId`,`number`,`spec`,`price`,`addTime`,`status`) VALUES ('16','5','2','16','2','尺寸:37','40.00','1504195200','1'),('16','5','2','17','2','尺寸:38','50.00','1504195200','1') [ RunTime:0.0000s ]
+

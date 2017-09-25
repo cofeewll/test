@@ -1,0 +1,891 @@
+[ 2017-09-18T09:13:27+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/getCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T09:13:56+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/getCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-18T09:14:12+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/getCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_shop` WHERE `phone` = '15903640393' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_sms_record` (`phone`,`context`,`endtime`,`addtime`,`code`,`type`) VALUES ('15903640393','【唯公商城】您的验证码为：4184，此验证码15分钟之内输入有效。','1505698152','1505697252','4184','5') [ RunTime:0.0000s ]
+
+[ 2017-09-18T09:16:21+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T09:16:28+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T09:17:14+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-18T09:17:21+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640392' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T09:17:34+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = '10002' AND `phone` = '15903640393' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T09:17:40+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = '10001' AND `phone` = '15903640393' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-18T09:18:15+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = '10001' AND `phone` = '15903640393' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T09:18:19+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = '10002' AND `phone` = '15903640393' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_shop` SET `loginTime`='1505697499' WHERE `username` = '10002' AND `phone` = '15903640393' [ RunTime:0.0680s ]
+SQL: SELECT `id`,`phone`,`title`,`username`,`img` FROM `wg_shop` WHERE `username` = '10002' AND `phone` = '15903640393' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user D:\wamp\www\wllspace\php\wgshop\Application\ShopApi\Model\ShopModel.class.php 第 74 行.
+
+[ 2017-09-18T09:29:50+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-18T09:38:13+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-18T09:38:28+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = '10002' AND `phone` = '15903640393' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_shop` SET `loginTime`='1505698708',`andChannel`='123456789',`type`='1' WHERE `username` = '10002' AND `phone` = '15903640393' [ RunTime:0.0420s ]
+SQL: SELECT `id`,`phone`,`title`,`username`,`img` FROM `wg_shop` WHERE `username` = '10002' AND `phone` = '15903640393' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0030s ]
+SQL: SELECT `value` FROM `wg_config` WHERE `config` = 'avatar' AND `flag` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_sms_record` SET `isUse`='1' WHERE `id` = 1 [ RunTime:0.0010s ]
+
+[ 2017-09-18T09:42:18+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T09:49:07+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/getCode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_shop` WHERE `phone` = '15903640393' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-18T11:06:42+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/getInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+
+[ 2017-09-18T11:09:02+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/getInfo?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJsb2dpblRpbWUiOjE1MDU2OTg3MDh9.cEy7zCPIgUy6GnJ2q8oZCqwt0joyX7dv7smcVgTuyRg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T11:09:44+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/getInfo?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJsb2dpblRpbWUiOjE1MDU2OTg3MDh9.cEy7zCPIgUy6GnJ2q8oZCqwt0joyX7dv7smcVgTuyRg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`phone`,`title`,`username`,`img` FROM `wg_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0030s ]
+SQL: SELECT `value` FROM `wg_config` WHERE `config` = 'avatar' AND `flag` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') LIMIT 1   [ RunTime:0.0746s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 AND `oMonth` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 AND `oMonth` = 9 AND `oDate` = 18 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0486s ]
+ERR: 1054:Unknown column 'realMoney' in 'field list'
+ [ SQL语句 ] : SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 2 AND `status` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'realMoney' in 'field list'
+ [ SQL语句 ] : SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 2 AND `status` = 1 LIMIT 1  
+
+[ 2017-09-18T11:10:22+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/getInfo?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIiLCJsb2dpblRpbWUiOjE1MDU2OTg3MDh9.cEy7zCPIgUy6GnJ2q8oZCqwt0joyX7dv7smcVgTuyRg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`phone`,`title`,`username`,`img` FROM `wg_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0640s ]
+SQL: SELECT `value` FROM `wg_config` WHERE `config` = 'avatar' AND `flag` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0030s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 AND `oMonth` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 2 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 AND `oMonth` = 9 AND `oDate` = 18 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0060s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 2 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 2 AND `status` = 1 AND `createTime` BETWEEN 1483200000 AND 1514735999 LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 2 AND `status` = 1 AND `createTime` BETWEEN 1504195200 AND 1506787199 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 2 AND `status` = 1 AND `createTime` BETWEEN 1505664000 AND 1505750399 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T11:13:16+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640393' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T11:14:43+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640232' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T11:14:59+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640232' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T11:15:00+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640232' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T11:15:16+08:00 ] 127.0.0.1 /index.php/ShopApi/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_sms_record` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_sms_record` WHERE `phone` = '15903640232' AND `isUse` = 0 AND `type` = 5 ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = '10001' AND `phone` = '15903640232' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_shop` SET `loginTime`='1505704516',`andChannel`='123456789',`type`='1' WHERE `username` = '10001' AND `phone` = '15903640232' [ RunTime:0.0700s ]
+SQL: SELECT `id`,`phone`,`title`,`username`,`img` FROM `wg_shop` WHERE `username` = '10001' AND `phone` = '15903640232' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_sms_record` SET `isUse`='1' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2017-09-18T11:15:31+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/getInfo?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`phone`,`title`,`username`,`img` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 1 AND `status` IN ('1','2','3','5') LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 1 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 1 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 AND `oMonth` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(amount) as amount,count(*) as num FROM `wg_orders` WHERE `shopId` = 1 AND `status` IN ('1','2','3','5') AND `oYear` = 2017 AND `oMonth` = 9 AND `oDate` = 18 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0030s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 1 AND `status` = 1 AND `createTime` BETWEEN 1483200000 AND 1514735999 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 1 AND `status` = 1 AND `createTime` BETWEEN 1504195200 AND 1506787199 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT sum(realMoney) as amount,count(*) as num FROM `wg_order_refund` WHERE `shopId` = 1 AND `status` = 1 AND `createTime` BETWEEN 1505664000 AND 1505750399 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T11:27:01+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/myOrder?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT `title`,o.status,o.id,`orderSn`,`amount`,`fee`,o.address,o.realname,o.phone,`remark`,o.createTime FROM wg_orders o left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId = 1 ) ORDER BY o.id desc LIMIT 0,10   [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=28 )  [ RunTime:0.0850s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=27 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=26 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=25 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=24 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=23 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=22 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=15 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=13 )  [ RunTime:0.0010s ]
+
+[ 2017-09-18T11:40:02+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/myOrder?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0060s ]
+SQL: SELECT `title`,o.status,o.id,`orderSn`,`amount`,`fee`,o.address,o.realname,o.phone,`remark`,o.createTime FROM wg_orders o left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId = 1 ) ORDER BY o.id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0050s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=28 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=27 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=26 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=25 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=22 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=15 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=13 )  [ RunTime:0.0000s ]
+
+[ 2017-09-18T11:40:17+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/myOrder?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0050s ]
+SQL: SELECT `title`,o.status,o.id,`orderSn`,`amount`,`fee`,o.address,o.realname,o.phone,`remark`,o.createTime FROM wg_orders o left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId = 1 ) ORDER BY o.id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0030s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=28 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=27 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=26 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=25 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=24 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=23 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=22 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=17 )  [ RunTime:0.0000s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=15 )  [ RunTime:0.0010s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=13 )  [ RunTime:0.0010s ]
+
+[ 2017-09-18T13:34:47+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: uid D:\wamp\www\wllspace\php\wgshop\Application\ShopApi\Controller\IndexController.class.php 第 105 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY id desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.uid= ) ORDER BY id desc LIMIT 0,10  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY id desc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.uid= ) ORDER BY id desc LIMIT 0,10  
+
+[ 2017-09-18T13:35:27+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T13:41:21+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T13:42:09+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T13:45:31+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T13:47:12+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0030s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T13:48:27+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0050s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T13:50:10+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0030s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T13:54:09+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0050s ]
+ERR: 1052:Column 'id' in order clause is ambiguous
+ [ SQL语句 ] : SELECT re.spec_key_name,re.reason,re.amount,re.realMoney,re.addMoney,`evidence`,re.remark,re.createTime,`refundSn`,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10  
+ERR: 1052:Column 'id' in order clause is ambiguous
+ [ SQL语句 ] : SELECT re.spec_key_name,re.reason,re.amount,re.realMoney,re.addMoney,`evidence`,re.remark,re.createTime,`refundSn`,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10  
+
+[ 2017-09-18T13:54:51+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0030s ]
+SQL: SELECT re.id,re.spec_key_name,re.reason,re.amount,re.realMoney,re.addMoney,`evidence`,re.remark,re.createTime,`refundSn`,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T13:56:10+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.id,re.spec_key_name,re.reason,re.amount,re.realMoney,re.addMoney,`evidence`,re.remark,re.createTime,`refundSn`,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T13:57:13+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0060s ]
+SQL: SELECT re.id,re.spec_key_name,re.reason,re.amount,re.realMoney,re.addMoney,`evidence`,re.remark,re.createTime,re.status,`refundSn`,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T13:58:18+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0050s ]
+SQL: SELECT re.id,re.number,re.spec_key_name,re.reason,re.amount,re.realMoney,re.addMoney,`evidence`,re.remark,re.createTime,re.status,`refundSn`,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T14:00:07+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T14:01:33+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0060s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,gs.price FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0510s ]
+
+[ 2017-09-18T14:03:16+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0620s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2017-09-18T14:04:58+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0030s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T14:08:05+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T14:09:00+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0060s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T14:09:18+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T14:13:15+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T14:13:42+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0050s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-09-18T14:24:16+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/refundList?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.0040s ]
+SQL: SELECT re.*,o.orderSn,o.createTime as addTime,`name`,g.img,g.price,gs.price as sprice FROM wg_order_refund re left JOIN wg_orders as o on o.id=re.orderId left JOIN wg_goods as g on g.id=re.goodsId left JOIN wg_goods_spec as gs on gs.id=re.gsId  WHERE ( re.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-09-18T14:35:24+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/getShip?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T14:46:35+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/getShip?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-09-18T14:51:55+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/myOrder?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: Wrong number of segments
+
+[ 2017-09-18T14:52:06+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/myOrder?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0720s ]
+SQL: SELECT `title`,o.status,o.id,`orderSn`,`amount`,`fee`,o.address,o.realname,o.phone,`remark`,o.createTime FROM wg_orders o left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId = 1 ) ORDER BY o.id desc LIMIT 0,10   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=28 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=27 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=26 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=25 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=24 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=23 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=22 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=17 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=15 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+SQL: SELECT `name`,`img`,og.number,og.price,og.spec,og.status,og.goodsId,og.gsId FROM wg_order_goods og left JOIN wg_goods as g on og.goodsId=g.id  WHERE ( og.orderId=13 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: address D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\OrdersModel.class.php 第 100 行.
+
+[ 2017-09-18T14:59:19+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: Wrong number of segments
+
+[ 2017-09-18T14:59:42+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:02:04+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:02:10+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:02:45+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:02:46+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:06:15+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:06:46+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:06:58+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:07:08+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T15:07:25+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_orders` WHERE `id` = 27 AND `status` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: UPDATE `wg_orders` SET `shipId`='324323423',`shipName`='1',`shipTime`='1505718445' WHERE `id` = 27 [ RunTime:0.0770s ]
+
+[ 2017-09-18T15:11:57+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_orders` WHERE `id` = 27 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_orders` SET `status`='2',`shipId`='324323423',`shipName`='1',`shipTime`='1505718716' WHERE `id` = 27 [ RunTime:0.0700s ]
+
+[ 2017-09-18T15:11:57+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wg_orders` WHERE `id` = 27 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-09-18T15:12:32+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/delivery
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_orders` WHERE `id` = 27 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T16:58:58+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/notice?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_notice` [ RunTime:0.1160s ]
+ERR: 1054:Unknown column 'sendId' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `wg_notice` WHERE `type` IN ('0','2') AND ( sendId = 0 or sendId =1 ) AND `status` = 1 ORDER BY id desc 
+ERR: 1054:Unknown column 'sendId' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `wg_notice` WHERE `type` IN ('0','2') AND ( sendId = 0 or sendId =1 ) AND `status` = 1 ORDER BY id desc 
+
+[ 2017-09-18T16:59:43+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/notice?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_notice` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_notice` WHERE `type` IN ('0','2') AND ( sendId = 0 or sendId =1 ) AND `status` = 1 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2017-09-18T17:00:42+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/sysRead?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_notice_read` [ RunTime:0.0040s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=1 and type=2 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wg_notice_read` WHERE ( nid= and uid=1 and type=2 ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and uid=1 and type=2 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `wg_notice_read` WHERE ( nid= and uid=1 and type=2 ) LIMIT 1  
+
+[ 2017-09-18T17:01:26+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/sysRead?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-18T17:01:56+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/sysRead?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_notice_read` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_notice_read` WHERE ( nid=1 and uid=1 and type=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_notice_read` (`nid`,`uid`,`createTime`,`type`) VALUES ('1','1','1505725316','2') [ RunTime:0.0970s ]
+
+[ 2017-09-18T17:03:27+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/sysRead?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_notice` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_notice` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-18T17:03:40+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/sysRead?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_notice` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_notice` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-18T17:07:13+08:00 ] 127.0.0.1 /index.php/ShopApi/Index/hasNoRead?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_notice` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `wg_notice` WHERE `type` IN ('0','2') AND ( sendId = 0 or sendId =1 ) AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_notice_read` [ RunTime:0.0250s ]
+SQL: SELECT `nid` FROM `wg_notice_read` WHERE ( uid=1 and type=2 )  [ RunTime:0.0000s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array D:\wamp\www\wllspace\php\wgshop\Application\ShopApi\Controller\IndexController.class.php 第 246 行.
+
+[ 2017-09-18T17:49:27+08:00 ] 127.0.0.1 /index.php/ShopApi/Order/getShip?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+

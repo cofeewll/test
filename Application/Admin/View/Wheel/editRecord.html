@@ -1,0 +1,126 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form role="form" action="{:U('Wheel/editRecord')}" id="form-add1" class="form-horizontal">
+                        <input type="hidden" name="fid" value="{$fid}" />
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td style="width: 40%;">中奖人</td>
+                                <td>奖品</td>
+                            </tr>
+                            <notempty name="children">
+                                <foreach name="children" item="vo">
+                                    <tr>
+                                        <td>
+                                            <input name="user[]" type="hidden" value="{$vo.uid}">
+                                            <eq name="vo.uid" value="$info.uid">中奖人：</eq>
+                                            [编号:{$vo.number}]&nbsp;{$vo.phone}
+                                        </td>
+                                        <td>
+                                            <select name="award[]" class="form-control">
+                                                <option value="">请选择</option>
+                                                <volist name="prize" id="val">
+                                                    <option value="{$key}" <if condition="$vo.pid eq $key">selected</if>>{$val}</option>
+                                                </volist>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            <else/>
+                                 <tr>
+                                    <td>
+                                        <input name="user[]" type="hidden" value="{$info.uid}">
+                                        中奖人：[编号:{$info.number}]&nbsp;{$info.phone}
+                                    </td>
+                                    <td>
+                                        <select name="award[]" class="form-control">
+                                            <option value="">请选择</option>
+                                            <volist name="prize" id="val">
+                                                <option value="{$key}">{$val}</option>
+                                            </volist>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <volist name="parents" id="vo">
+                                    <tr>
+                                        <td>
+                                            <input name="user[]" type="hidden" value="{$vo.id}">
+                                            [编号:{$vo.number}]&nbsp;{$vo.phone}
+                                        </td>
+                                        <td>
+                                            <select name="award[]" class="form-control">
+                                                <option value="">请选择</option>
+                                                <volist name="prize" id="val">
+                                                    <option value="{$key}">{$val}</option>
+                                                </volist>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </volist>
+                            </notempty>
+                            <empty name="children">
+                                <tr>
+                                    <td>操作</td>
+                                    <td><button class="btn btn-primary" type="submit">保存</button></td>
+                                </tr>
+                            </empty>
+                            </tbody>
+                        </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+        
+        $("#form-add1").submit(function(){
+            var flag = true;
+            $("select[name='award[]']").each(function(){
+                if( $(this).val() == '' ){
+                    layer.msg('还有用户没有派奖');
+                    flag = false;
+                    return false;
+                }
+            });
+            if(!flag){
+                return flag;
+            }
+
+            var self = $(this);
+            
+            $.post(self.attr("action"), self.serialize(), success, "json");
+            
+            return false;
+
+            function success(data){
+                if(data.status){
+                    layer.msg(data.info, {
+                        icon:1,
+                        offset: 0,
+                        shift: 0,
+                        time:1500
+                    },function(){
+                        window.location.reload();//刷新当前页面 ;
+                    });
+                } else {
+                    layer.msg(data.info, {
+                        icon:0,
+                        offset: 0,
+                        shift: 6,
+                        time:1500
+                    }); 
+                     
+                }
+            }
+        });
+    </script>
+</block>

@@ -1,0 +1,1250 @@
+[ 2017-09-20T15:44:33+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?name=%E5%AD%90&status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods_cate` WHERE `name` LIKE '%子%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [name] => 裙子
+            [img] => /Uploads/images/20170908/59b2692747bcb.png
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599802
+            [updateTime] => 1504864552
+        )
+
+)
+
+DEBUG: Array
+(
+)
+
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` WHERE `name` LIKE '%子%' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:45:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0156s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0156s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => 衣服
+            [img] => 
+            [fid] => 0
+            [sorts] => 5
+            [status] => 1
+            [addTime] => 1504495170
+            [updateTime] => 1504495170
+        )
+
+    [1] => Array
+        (
+            [id] => 3
+            [name] => 化妆品
+            [img] => 
+            [fid] => 0
+            [sorts] => 1
+            [status] => 1
+            [addTime] => 1504495300
+            [updateTime] => 1504495300
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [name] => 护肤品
+            [img] => /Uploads/images/20170904/59accaeff3c7c.png
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504496369
+            [updateTime] => 1504496369
+        )
+
+    [3] => Array
+        (
+            [id] => 5
+            [name] => 彩妆
+            [img] => /Uploads/images/20170908/59b2691113eb6.jpg
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599734
+            [updateTime] => 1504864530
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [name] => T恤
+            [img] => /Uploads/images/20170908/59b2691bec799.jpg
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599759
+            [updateTime] => 1504864540
+        )
+
+    [5] => Array
+        (
+            [id] => 7
+            [name] => 裙子
+            [img] => /Uploads/images/20170908/59b2692747bcb.png
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599802
+            [updateTime] => 1504864552
+        )
+
+)
+
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => 衣服
+            [img] => 
+            [fid] => 0
+            [sorts] => 5
+            [status] => 1
+            [addTime] => 1504495170
+            [updateTime] => 1504495170
+            [html] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [name] => T恤
+            [img] => /Uploads/images/20170908/59b2691bec799.jpg
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599759
+            [updateTime] => 1504864540
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+    [2] => Array
+        (
+            [id] => 7
+            [name] => 裙子
+            [img] => /Uploads/images/20170908/59b2692747bcb.png
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599802
+            [updateTime] => 1504864552
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => 化妆品
+            [img] => 
+            [fid] => 0
+            [sorts] => 1
+            [status] => 1
+            [addTime] => 1504495300
+            [updateTime] => 1504495300
+            [html] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 4
+            [name] => 护肤品
+            [img] => /Uploads/images/20170904/59accaeff3c7c.png
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504496369
+            [updateTime] => 1504496369
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [name] => 彩妆
+            [img] => /Uploads/images/20170908/59b2691113eb6.jpg
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599734
+            [updateTime] => 1504864530
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+)
+
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:46:17+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?name=%E5%AD%90&status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods_cate` WHERE `name` LIKE '%子%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [name] => 裙子
+            [img] => /Uploads/images/20170908/59b2692747bcb.png
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599802
+            [updateTime] => 1504864552
+        )
+
+)
+
+DEBUG: Array
+(
+)
+
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` WHERE `name` LIKE '%子%' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:46:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T15:46:41+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?_search=false&nd=1505893601464&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0010s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [name] => 化妆品
+            [img] => 
+            [fid] => 0
+            [sorts] => 1
+            [status] => 1
+            [addTime] => 1504495300
+            [updateTime] => 1504495300
+        )
+
+    [1] => Array
+        (
+            [id] => 1
+            [name] => 衣服
+            [img] => 
+            [fid] => 0
+            [sorts] => 5
+            [status] => 1
+            [addTime] => 1504495170
+            [updateTime] => 1504495170
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [name] => 护肤品
+            [img] => /Uploads/images/20170904/59accaeff3c7c.png
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504496369
+            [updateTime] => 1504496369
+        )
+
+    [3] => Array
+        (
+            [id] => 5
+            [name] => 彩妆
+            [img] => /Uploads/images/20170908/59b2691113eb6.jpg
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599734
+            [updateTime] => 1504864530
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [name] => T恤
+            [img] => /Uploads/images/20170908/59b2691bec799.jpg
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599759
+            [updateTime] => 1504864540
+        )
+
+    [5] => Array
+        (
+            [id] => 7
+            [name] => 裙子
+            [img] => /Uploads/images/20170908/59b2692747bcb.png
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599802
+            [updateTime] => 1504864552
+        )
+
+)
+
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [name] => 化妆品
+            [img] => 
+            [fid] => 0
+            [sorts] => 1
+            [status] => 1
+            [addTime] => 1504495300
+            [updateTime] => 1504495300
+            [html] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 4
+            [name] => 护肤品
+            [img] => /Uploads/images/20170904/59accaeff3c7c.png
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504496369
+            [updateTime] => 1504496369
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+    [2] => Array
+        (
+            [id] => 5
+            [name] => 彩妆
+            [img] => /Uploads/images/20170908/59b2691113eb6.jpg
+            [fid] => 3
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599734
+            [updateTime] => 1504864530
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+    [3] => Array
+        (
+            [id] => 1
+            [name] => 衣服
+            [img] => 
+            [fid] => 0
+            [sorts] => 5
+            [status] => 1
+            [addTime] => 1504495170
+            [updateTime] => 1504495170
+            [html] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [name] => T恤
+            [img] => /Uploads/images/20170908/59b2691bec799.jpg
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599759
+            [updateTime] => 1504864540
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+    [5] => Array
+        (
+            [id] => 7
+            [name] => 裙子
+            [img] => /Uploads/images/20170908/59b2692747bcb.png
+            [fid] => 1
+            [sorts] => 50
+            [status] => 1
+            [addTime] => 1504599802
+            [updateTime] => 1504864552
+            [html] => &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|— 
+        )
+
+)
+
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:49:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: fid D:\wamp\www\wllspace\php\wgshop\Application\Admin\Controller\GoodsController.class.php 第 309 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `fid` = null  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-20T15:49:59+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?_search=false&nd=1505893799329&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:50:14+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: fid D:\wamp\www\wllspace\php\wgshop\Application\Admin\Controller\GoodsController.class.php 第 309 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `fid` = null  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-20T15:50:14+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?_search=false&nd=1505893814135&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:50:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `fid` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T15:50:45+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?_search=false&nd=1505893845875&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0110s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:50:49+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?cid=1&status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:52:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `fid` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-20T15:52:01+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?_search=false&nd=1505893921605&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:52:04+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?fid=1&status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods_cate` WHERE ( id = 1 or fid = 1 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` WHERE ( id = 1 or fid = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-20T15:52:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html?fid=3&status=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods_cate` WHERE ( id = 3 or fid = 3 ) ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` WHERE ( id = 3 or fid = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T15:52:09+08:00 ] 127.0.0.1 /index.php/Admin/Goods/cate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/cate' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT * FROM `wg_goods_cate` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_cate` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T16:16:49+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0342s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Config/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_config` WHERE `flag` = 1 AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0156s ]
+SQL: SELECT `config`,`value` FROM `wg_config` WHERE `config` IN ('alipay','wxpay','kdniao','sms')  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T17:50:28+08:00 ] 127.0.0.1 /index.php/Admin/Wheel/notices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-09-20T17:50:49+08:00 ] 127.0.0.1 /index.php/Admin/Wheel/notices
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Wheel/notices' LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-20T17:50:52+08:00 ] 127.0.0.1 /index.php/Admin/Wheel/notices.html?_search=false&nd=1505901050899&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0070s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Wheel/notices' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_wheel_notice` [ RunTime:0.0480s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT n.*,`nickname` FROM wg_wheel_notice n INNER JOIN wg_user on wg_user.id = n.uid  ORDER BY id desc LIMIT 0,10   [ RunTime:0.1370s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_wheel_notice` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T17:56:29+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addGoods/id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0620s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0320s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 5 AND `type` = 1  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0100s ]
+SQL: SELECT `title` FROM `wg_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0312s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 5  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0516s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T17:56:31+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxGetSpecSelect.html?goods_id=5&spec_type=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0180s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.1290s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 0 ) ORDER BY `sorts` asc  [ RunTime:0.1610s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0910s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 5 ) LIMIT 1   [ RunTime:0.1280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.066004s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.066004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T17:56:32+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxGetSpecInput/goods_id/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0080s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0260s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 5 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 223 行.
+
+[ 2017-09-20T17:56:34+08:00 ] 127.0.0.1 /index.php/Admin/Goods/index.html?_search=false&nd=1505901393842&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0150s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT g.*,s.title,c.name as cname FROM wg_goods g left JOIN wg_shop as s on g.shopId = s.id left JOIN wg_goods_cate as c on g.cid = c.id  ORDER BY id desc LIMIT 0,10   [ RunTime:0.1078s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM wg_goods g LIMIT 1   [ RunTime:0.0280s ]
+
+[ 2017-09-20T17:56:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/addGoods/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0060s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0070s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 2 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0060s ]
+SQL: SELECT `title` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0040s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Admin\Controller\GoodsController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Admin\Controller\GoodsController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Admin\Controller\GoodsController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Admin\Controller\GoodsController.class.php 第 149 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Admin\Controller\GoodsController.class.php 第 149 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\c74fb0c111dc216c19c7bf766c95f466.php 第 210 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\c74fb0c111dc216c19c7bf766c95f466.php 第 210 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\c74fb0c111dc216c19c7bf766c95f466.php 第 210 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\c74fb0c111dc216c19c7bf766c95f466.php 第 210 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\c74fb0c111dc216c19c7bf766c95f466.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T17:56:35+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxGetSpecSelect.html?goods_id=2&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T17:56:36+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+
+[ 2017-09-20T17:57:03+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+
+[ 2017-09-20T17:57:06+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0156s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 242 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 243 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Undefined index: 2_6 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 242 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 243 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+
+[ 2017-09-20T17:57:08+08:00 ] 127.0.0.1 /index.php/Admin/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 242 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 243 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Undefined index: 2_6 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 242 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 243 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+NOTIC: [8] Undefined index: 2_7 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 242 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 243 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 244 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 245 行.
+
+[ 2017-09-20T17:57:23+08:00 ] 127.0.0.1 /index.php/Admin/Goods/index.html?_search=false&nd=1505901443070&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Goods/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT g.*,s.title,c.name as cname FROM wg_goods g left JOIN wg_shop as s on g.shopId = s.id left JOIN wg_goods_cate as c on g.cid = c.id  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0120s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM wg_goods g LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T17:59:21+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0166s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Config/index' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_config` WHERE `flag` = 1 AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0156s ]
+SQL: SELECT `config`,`value` FROM `wg_config` WHERE `config` IN ('alipay','wxpay','kdniao','sms')  [ RunTime:0.0186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-20T18:21:24+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Config/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_config` WHERE `flag` = 1 AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SELECT `config`,`value` FROM `wg_config` WHERE `config` IN ('alipay','wxpay','kdniao','sms')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T18:22:04+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0120s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Config/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `wg_config` WHERE `flag` = 1 AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SELECT `config`,`value` FROM `wg_config` WHERE `config` IN ('alipay','wxpay','kdniao','sms')  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015601s ]
+
+[ 2017-09-20T18:23:14+08:00 ] 127.0.0.1 /index.php/Admin/Config/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Config/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_config` WHERE `flag` = 1 AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SELECT `config`,`value` FROM `wg_config` WHERE `config` IN ('alipay','wxpay','kdniao','sms')  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

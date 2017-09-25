@@ -1,0 +1,73 @@
+<extend name="Public:header" />
+
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form role="form" action="{:U('Manager/adminAddSave')}" id="form-add" class="form-horizontal">
+                            <input type="hidden" <notempty name="info">value="{$info['id']}"</notempty> name="id" />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">角色</label>
+                                <div class="col-sm-10 shot">
+                                    <select class="form-control" name="group" id="group" style="width:60%;">
+                                        <option value="">请选择角色</option>
+                                        <foreach name="groups" item="v">
+                                            <option value="{$v.id}" <notempty name="info"><eq name="v['id']" value="$info['type']" >selected</eq></notempty> >{$v.title}</option>
+                                        </foreach>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >昵称</label>
+                                <div class="col-sm-10 shot">
+                                    <input type="text" class="form-control" <notempty name="info">value="{$info['username']}"</notempty> name="username" style="width:60%;" autocomplete="off" placeholder="昵称">
+                                </div>
+
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >登录密码</label>
+                                <div class="col-sm-10 shot">
+                                    <input type="text" class="form-control" name="password" style="width:60%;" autocomplete="off" placeholder="不修改为空">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >手机号码</label>
+                                <div class="col-sm-10 shot">
+                                    <input type="text" class="form-control" <notempty name="info">value="{$info['mobile']}"</notempty> name="mobile"  style="width:60%;"  autocomplete="off" placeholder="手机号码" style="width:250px;" onkeyup="this.value=this.value.replace(/\D/g,'')">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group hond">
+                                <label class="col-sm-2 control-label">状态</label>
+                                <div class="col-sm-10 shot">
+                                    <label class="i-checks">
+                                        <input type="radio" value="1" name="status" <notempty name="info"><if condition="$info['status'] eq 1">checked</if><else/>checked</notempty> > <i></i> 正常&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <label class="i-checks">
+                                        <input type="radio" value="0" name="status" <notempty name="info"><if condition="$info['status'] eq 0">checked</if></notempty> > <i></i> 禁用&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2">&nbsp;</label>
+                                <button class="btn btn-primary" type="submit">保存</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</block>
+
+

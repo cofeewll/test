@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <title>唯公商城--扫码注册</title>
+    <link type="text/css" rel="stylesheet" href="/Public/Home/css/style.css">
+    <script type="text/javascript" src="/Public/Home/js/jquery-1.11.1.min.js"></script>
+    <script src="/Public/Static/layer/layer.js"></script>
+</head>
+<body class="bgcolor">
+<div class="zhucebox">
+    <ul>
+        <li><input type="text" placeholder="请输入手机号" name="phone"></li>
+        <li class="code"><input type="text" placeholder="请输入验证码" name="code">
+            <a href="javascript:void(0)" onclick="getcode()" class="gettel">获取验证码</a></li><!--a标签加上cur类名，是灰色样式，不可点击状态-->
+        <li><input type="text" placeholder="请设置密码(6-16位数字、字母的组合)" name="password" onfocus="this.type='password'"></li>
+        <input type="hidden" name="pid" value="{$pid}">
+    </ul>
+    <p class="checkLable cur"><label>我已阅读和同意<a href="{:U('article')}">《服务协议及隐私条款》</a></label></p>
+
+    <div class="btncsn"><a href="###" onclick="sure()">确认</a> </div>
+</div>
+
+
+<script>
+    $('.checkLable').click(function(){
+        if($(this).hasClass('cur')){
+            $(this).removeClass('cur');
+        }else {
+            $(this).addClass('cur');
+        }
+    });
+    //获取验证码
+    var lockl =true;var wait=60;
+    function getcode(){
+        var phone=$("input[name=phone]").val();
+        if(phone==''){
+            layer.msg("请输入手机号");return false;
+        }
+        $('.gettel').removeAttr("onclick");
+        $.post("{:U('getCode')}",{phone:phone,type:1},function(data){
+            if(data.status==1){
+                //倒计时
+                if(!lockl) {
+                    return false;
+                }else{
+                    lockl = false;
+                }
+                var jishi = setInterval(function() {
+                    wait--;
+                    $('.gettel').html("重新发送(" + wait + ")");
+
+                    if(wait==0){
+                        clearInterval(jishi);
+                        $('.gettel').html("获取验证码");
+                        $('.gettel').attr("onclick","getcode()")
+                        lockl = true;
+                        wait=120;
+                    }
+                },1000);
+                layer.open({
+                    content: '验证码已发送，注意查收',
+                    skin: 'msg',
+                    time: 2 //2秒后自动关闭
+                });
+                return false;
+            }else{
+                $('.gettel').attr("onclick","getcode()")
+                layer.msg(data.msg);return false;
+            }
+        })
+    }
+    function sure(){
+        var phone=$("input[name=phone]").val();
+        var code=$("input[name=code]").val();
+        var password=$("input[name=password]").val();
+        if(phone==''){
+            layer.msg("手机号不能为空");return false;
+        }
+        if(code==""){
+            layer.msg("验证码不能为空");return false;
+        }
+        if(password==""){
+            layer.msg("密码不能为空");return false;
+        }
+        $.post("{:U('doAction')}",{phone:phone,code:code,password:password,pid:$("input[name=pid]").val()},function(data){
+            layer.msg(data.msg);
+            if(data.status==1){
+                location.href="{:U('down')}";
+            }
+        })
+    }
+</script>
+</body>
+</html>

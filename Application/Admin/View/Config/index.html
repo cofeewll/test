@@ -1,0 +1,210 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">系统配置</a>
+                            </li>
+                            <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">支付配置</a>
+                            </li>
+                            <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false">物流配置</a>
+                            </li>
+                            <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false">短信配置</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ibox-content" style="border-top: 0;">
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane active">
+                                <form role="form" action="{:U('Config/edit')}" id="form-add" class="form-horizontal">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <volist name="data" id="v">
+                                            <tr>
+                                                <td style="width:10%;">
+                                                    <if condition="$v['type'] eq 'file'">
+                                                        {$v.name}<br><span class="text-warning">尺寸:200*200</span>
+                                                        <else/>
+                                                        {$v.name}<in name="v.config" value="reason,shopcate"><br/><span class="text-warning">(多个请用|分隔)</span></in>
+                                                    </if></td>
+                                                <td>
+                                                    <if condition="$v['type'] eq 'file'">
+                                                        <div id="{$v.config}"></div>
+                                                        <else/>
+                                                        <eq name="v.type" value="src">
+                                                            <img height="200" title="平台推广二维码" alt="平台推广二维码" src="http://qr.liantu.com/api.php?{$v.value}">
+                                                        <else/>
+                                                            <input type="{$v.type}" name="config[{$v.config}]" value="{$v.value}" placeholder="{$v.name}" class="form-control">
+                                                        </eq>
+                                                    </if>
+                                                </td>
+                                            </tr>
+                                        </volist>
+                                        <tr>
+                                            <td>操作</td>
+                                            <td><button class="btn btn-primary" type="submit">保存</button></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                            <div id="tab-2" class="tab-pane">
+                                <form role="form" action="{:U('Config/editConfig')}" id="form-edit" class="form-horizontal">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr><td colspan="2">微信支付配置：</td></tr>
+                                            <tr>
+                                                <td style="width:10%;">微信APPID</td>
+                                                <td>
+                                                    <input type="text" name="wxpay[app_id]" <notempty name="wxpay.app_id">value="{$wxpay.app_id}"</notempty> placeholder="请填写绑定支付的APPID" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:10%;">商户号MCHID</td>
+                                                <td>
+                                                    <input type="text" name="wxpay[mch_id]" <notempty name="wxpay.mch_id">value="{$wxpay.mch_id}"</notempty> placeholder="请填您的微信商户号" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:10%;">商户支付密钥KEY</td>
+                                                <td>
+                                                    <input type="text" name="wxpay[key]" <notempty name="wxpay.key">value="{$wxpay.key}"</notempty> placeholder="请填写商户支付密钥" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr><td colspan="2">支付宝支付配置：</td></tr>
+                                            <tr>
+                                                <td style="width:10%;">支付宝APPID</td>
+                                                <td>
+                                                    <input type="text" name="alipay[app_id]" <notempty name="alipay.app_id">value="{$alipay.app_id}"</notempty> placeholder="请填写应用ID,您的APPID" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:10%;">支付宝公钥</td>
+                                                <td>
+                                                    <textarea style="height: 150px;" name="alipay[public_key]" class="form-control"><notempty name="alipay.public_key">{$alipay.public_key}</notempty></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:10%;">商户私钥</td>
+                                                <td>
+                                                    <textarea style="height: 250px;" name="alipay[private_key]" class="form-control"><notempty name="alipay.private_key">{$alipay.private_key}</notempty></textarea>
+                                                </td>
+                                            </tr>
+                                            
+                                        <tr>
+                                            <td>操作</td>
+                                            <td><button class="btn btn-primary" type="submit">保存</button></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                            <div id="tab-3" class="tab-pane">
+                                <form role="form" action="{:U('Config/editConfig')}" id="form-edit1" class="form-horizontal">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr><td colspan="2">快递鸟物流配置：</td></tr>
+                                            <tr>
+                                                <td style="width:10%;">快递鸟EBusinessID</td>
+                                                <td>
+                                                    <input type="text" name="kdniao[biz_id]" <notempty name="kdniao.biz_id">value="{$kdniao.biz_id}"</notempty> placeholder="请填写您的EBusinessID" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:10%;">快递鸟AppKey</td>
+                                                <td>
+                                                    <input type="text" name="kdniao[app_key]" <notempty name="kdniao.app_key">value="{$kdniao.app_key}"</notempty> placeholder="请填您的AppKey" class="form-control">
+                                                </td>
+                                            </tr>
+                                        <tr>
+                                            <td>操作</td>
+                                            <td><button class="btn btn-primary" type="submit">保存</button></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                            <div id="tab-4" class="tab-pane">
+                                <form role="form" action="{:U('Config/editConfig')}" id="form-edit2" class="form-horizontal">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr><td colspan="2">短信账户配置：</td></tr>
+                                            <tr>
+                                                <td style="width:10%;">账户名</td>
+                                                <td>
+                                                    <input type="text" name="sms[account]" <notempty name="sms.account">value="{$sms.account}"</notempty> placeholder="请填写您的账户名" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:10%;">账户密码</td>
+                                                <td>
+                                                    <input type="text" name="sms[password]" <notempty name="sms.password">value="{$sms.password}"</notempty> placeholder="请填您的账户密码" class="form-control">
+                                                </td>
+                                            </tr>
+                                        <tr>
+                                            <td>操作</td>
+                                            <td><button class="btn btn-primary" type="submit">保存</button></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+    <link rel="stylesheet" href="__ROOT__/Public/Static/Huploadify/Huploadify.css">
+    <script charset="utf-8" src="__ROOT__/Public/Static/Huploadify/jquery.Huploadify.js"></script>
+    <script charset="utf-8" src="__ROOT__/Public/Static/Huploadify/Huploadify.js"></script>
+    <script>
+        $(function() {
+            var upUrl = "{:U('Admin/UploadFile/upimage')}";
+            var delUrl = "{:U('Admin/UploadFile/delete')}";
+            //封面图片
+            var images = '{$images}';
+            images = JSON.parse(images);
+            console.log(images);
+            $.each(images,function(a,b){
+                upimage(b.name, "config["+b.name+"]", upUrl, delUrl, b.value);
+            });
+            $(".uploadify-queue-item").css({"width":"100px"})
+            $(".showthumb").css({"minHeight":"100px"});
+        });
+        $("#form-edit1,#form-edit2").submit(function(){
+            var self = $(this);
+            if($(document).find('#editor').length > 0){
+                editor.sync(); 
+            }
+            $.post(self.attr("action"), self.serialize(), success, "json");
+            
+            return false;
+            function success(data){
+                if(data.status){
+                    layer.msg(data.info, {
+                        icon:1,
+                        offset: 0,
+                        shift: 0,
+                        time:1500
+                    },function(){
+                        window.location.reload();//刷新当前页面 ;
+                    });
+                } else {
+                    layer.msg(data.info, {
+                        icon:0,
+                        offset: 0,
+                        shift: 6,
+                        time:1500
+                    }); 
+                     
+                }
+            }
+        });
+    </script>
+</block>

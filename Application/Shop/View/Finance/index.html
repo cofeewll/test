@@ -1,0 +1,64 @@
+<extend name="Public:header" />
+<block name="content">
+    <link href="__ADMIN__/css/plugins/chosen/chosen.css" rel="stylesheet">
+
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>账号信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post">
+                            <table class="table table-bordered">
+
+                                <tbody>
+
+                                <tr>
+                                    <td>微信号</td><td><input type="text" class="form-control" value="{$data.wechat}" name="wechat"></td></tr>
+                                <tr><td>支付宝号</td><td><input type="text" class="form-control" value="{$data.alipay}" name="alipay"></td></tr>
+                                <tr>
+                                    <td>银行卡号&nbsp;&nbsp;<span class="btn-xs  btn-primary  m-t-n-xs"  onclick="add(this)"><i class="fa fa-plus" ></i></span></td>
+                                    <td>
+                                        <volist name="data.bank" id="v">
+                                            <input type="text" class="form-control" value="{$v}" name="bank[]" placeholder="请输入银行卡号"><br>
+                                        </volist>
+                                    </td></tr>
+                                <tr>
+                                    <td>操作</td>
+                                    <td>
+                                        <input type="hidden" name="id" value="{$data['id']}">
+                                        <button class="btn-xs btn-primary">编辑</button></td>
+                                </tr>
+
+                                </tbody>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    </body>
+
+    <script>
+        function add(v){
+            $(v).parent().next("td").append('<input type="text" placeholder="请输入银行卡号" class="form-control" name="bank[]"><br>');
+        }
+        $("form").submit(function(){
+            $.post("{:U('setBank')}",$("form").serialize(),function(ret){
+                layer.msg(ret.msg);
+            });
+            return false;
+        })
+    </script>
+
+</block>

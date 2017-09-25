@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/form_basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:15 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 基本表单</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="__CSS__/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="__CSS__/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="__CSS__/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="__CSS__/animate.min.css" rel="stylesheet">
+    <link href="__CSS__/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="__JS__/check.js"></script>
+    <script src="__STATIC__/layer/layer.js"></script>
+
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">登录账号</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="username">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">验证码</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" style="width:60%;display:inline;" name="code">
+                                <a href="javascript:;" onclick="getcode()" class="gettel" style="display:inline;">&nbsp;&nbsp;获取验证码</a>
+                                <span class="help-block m-b-none">请先获取验证码进行验证</span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">新密码</label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="password" onfocus="this.type='password'">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary" type="submit">保存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    //获取验证码
+    var lockl =true;var wait=60;
+    function getcode(){
+        var phone=$("input[name=username]").val();
+        if(phone==''){
+            layer.msg("请输入账号");return false;
+        }
+        $('.gettel').removeAttr("onclick");
+        $.post("{:U('getCode')}",{username:phone,type:4},function(data){
+            if(data.status==1){
+                //倒计时
+                if(!lockl) {
+                    return false;
+                }else{
+                    lockl = false;
+                }
+                var jishi = setInterval(function() {
+                    wait--;
+                    $('.gettel').html("重新发送(" + wait + ")");
+
+                    if(wait==0){
+                        clearInterval(jishi);
+                        $('.gettel').html("获取验证码");
+                        $('.gettel').attr("onclick","getcode()")
+                        lockl = true;
+                        wait=120;
+                    }
+                },1000);
+                layer.open({
+                    content: '验证码已发送，注意查收',
+                    skin: 'msg',
+                    time: 2 //2秒后自动关闭
+                });
+                return false;
+            }else{
+                $('.gettel').attr("onclick","getcode()")
+                layer.open({
+                    content: data.msg,
+                    skin: 'msg',
+                    time: 2 //2秒后自动关闭
+                });
+                return false;
+            }
+        })
+    }
+    $(document)
+            .ajaxStart(function(){
+                $("button:submit").addClass("log-in").attr("disabled", true);
+            })
+            .ajaxStop(function(){
+                $("button:submit").removeClass("log-in").attr("disabled", false);
+            });
+    $("form").submit(function(){
+        var phone=$("input[name=username]").val();
+        if(phone==''){
+            layer.msg("请输入账号");return false;
+        }
+        var code=$("input[name=code]").val();
+        var pwd=$("input[name=password]").val();
+        if(code==''){
+            layer.msg("请输入验证码");return false;
+        }
+        if(pwd==''){
+            layer.msg("请输入新密码");return false;
+        }
+        $.post("{:U('editPwd')}",$(this).serialize(),function(data){
+            layer.msg(data.msg);
+            if(data.status>0){
+                $("form")[0].reset();
+            }
+        })
+        return false;
+    })
+</script>

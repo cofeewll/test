@@ -1,0 +1,93 @@
+<extend name="Public:header" />
+
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form role="form" action="{:U('Goods/addCate')}" id="form-add" class="form-horizontal">
+                            <input type="hidden" <notempty name="info">value="{$info['id']}"</notempty> name="id" />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >上级</label>
+                                <div class="col-sm-10 shot">
+                                    <select class="form-control" style="width:60%;display: inline-block;" name="fid" id="fid" >
+                                        <option value="0">顶级</option>
+                                        <foreach name="cates" item="v">
+                                            <option value="{$v.id}" <notempty name="info"><eq name="info.fid" value="$v.id" >selected</eq></notempty> >{$v.name}</option>
+                                        </foreach>
+                                    </select>
+                                    <label style="color: red;font-size:20px;" >&nbsp;*</label>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >分类名称</label>
+                                <div class="col-sm-10 shot">
+                                    <input type="text" class="form-control" <notempty name="info">value="{$info['name']}"</notempty> name="name" style="width:60%;" autocomplete="off" placeholder="分类名称">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group" id="imgDiv" <notempty name="info"><eq name="info.fid" value="0">style="display:none;"</eq><else/>style="display:none;"</notempty>>
+                                <label class="col-sm-2 control-label" >分类图片</label>
+                                <div class="col-sm-10 shot">
+                                    <div>(支持:jpg、jpeg、png、gif； 尺寸：宽200px*高200px；大小：限5M内)</div>
+                                    <div id="img"></div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >排序</label>
+                                <div class="col-sm-10 shot">
+                                    <input type="number" class="form-control" <notempty name="info">value="{$info['sorts']}"<else/>value="50"</notempty> name="sorts"  style="width:60%;"  autocomplete="off" style="width:250px;">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">状态</label>
+                                <div class="col-sm-10 shot">
+                                    <label class="i-checks">
+                                        <input type="radio" value="1" name="status" <notempty name="info"><if condition="$info['status'] eq 1">checked</if><else/>checked</notempty> > <i></i> 正常&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <label class="i-checks">
+                                        <input type="radio" value="0" name="status" <notempty name="info"><if condition="$info['status'] eq 0">checked</if></notempty> > <i></i> 禁用&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2">&nbsp;</label>
+                                <button class="btn btn-primary" type="submit">保存</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <link rel="stylesheet" href="__STATIC__/Huploadify/Huploadify.css">
+    <script charset="utf-8" src="__STATIC__/Huploadify/jquery.Huploadify.js"></script>
+    <script charset="utf-8" src="__STATIC__/Huploadify/Huploadify.js"></script>
+    <script>
+        $(function() {
+            var upUrl = "{:U('Admin/UploadFile/upimage')}";
+            var delUrl = "{:U('Admin/UploadFile/delete')}";
+            //封面图片
+            var img = "{$info['img']}";
+            upimage("img", "img", upUrl, delUrl, img);
+        });
+        $("#fid").change(function(){
+            if($("#fid").val()>0){
+                $("#imgDiv").show();
+            }else{
+                $("#imgDiv").hide();
+            }
+        });
+    </script>
+</block>
+
+

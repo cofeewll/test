@@ -1,0 +1,71 @@
+<extend name="Public:header" />
+<block name="title">
+    <title>唯公商城-管理主页</title>
+</block>
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row animated fadeInRight">
+            <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>评论展示</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <div class="feed-activity-list">
+
+                            <div class="feed-element">
+                                <a class="pull-left">
+                                    <img alt="image" class="img-circle" src="{$user.img}">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy">{$data.createTime|date="Y-m-d H:i:s",###}</small>
+                                    <strong>{$user.nickname}</strong> 评论了 <strong>{$goods.name}</strong>
+                                    <br>
+                                    <small class="text-muted">{$data.spec_key_name}</small>
+                                    <div class="well">
+                                        {$data.context}
+                                    </div>
+                                    <div class="photos">
+                                        <volist name="data.imgs" id="v">
+                                            <img alt="image" class="feed-photo" src="{$v}">
+                                        </volist>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+                <div class="ibox-content">
+                    <table class="table table-bordered">
+                        <tr><td>回复他/她</td><td><textarea class="form-control" id="reply">{$data.reply}</textarea></td></tr>
+                        <if condition="$data['replyTime'] gt 0">
+                            <tr><td>回复时间</td><td>{$data.replyTime|date="Y-m-d H:i:s",###}</td></tr>
+                            <else/>
+                            <tr><td>操作</td><td><button class="btn-sm btn-primary" attr="{$data.id}">保存</button></td></tr>
+                        </if>
+
+                    </table>
+                </div>
+
+        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script>
+    $("button").click(function(){
+        var content=$("#reply").val();
+        if(content==''){
+            layer.msg("请输入回复内容");return ;
+        }
+        $.post("{:U('reply')}",{reply:content,id:$(this).attr("attr")},function(data){
+            layer.msg(data.msg);location.replace(location.href);
+        })
+    })
+</script>
+    </block>

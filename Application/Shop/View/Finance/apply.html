@@ -1,0 +1,85 @@
+<extend name="Public:header" />
+<block name="content">
+    <link href="__ADMIN__/css/plugins/chosen/chosen.css" rel="stylesheet">
+
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>申请提现</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post">
+                            <table class="table table-bordered">
+
+                                <tbody>
+
+                                <tr><td>手续费比例</td><td><input type="text" class="form-control" value="{$data.shopFee}" readonly name="fee"></td></tr>
+                                <tr><td>可提现金额</td><td><input type="text" class="form-control" value="{$money}" readonly></td></tr>
+                                <tr><td>请输入提现金额</td><td><input type="text" class="form-control"  name="amount"></td></tr>
+                                <tr>
+                                    <td>选择提现账户</td>
+                                    <td>
+                                        <select class="form-control" name="type" onchange="select_account(this)">
+                                            <option value="0">请选择提现账户</option>
+                                            <option value="1">支付宝</option>
+                                            <option value="2">微信</option>
+                                            <option value="3">银行卡</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>操作</td>
+                                    <td>
+                                        <input type="hidden" name="id" value="{$data['id']}">
+                                        <button class="btn-sm btn-primary">编辑</button></td>
+                                </tr>
+
+                                </tbody>
+
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    </body>
+
+    <script>
+        function select_account(v){
+            var value=$(v).val();
+            $("#account").remove();
+            if(value!=0){
+                $.post("getAccount",{type:value},function(data){
+                    if(value<3){
+                        var html="<tr id='account'><td>账号</td><td><input type='text' name='account' readonly value='"+data.data+"' class='form-control'></td></tr>";
+                        $(v).parent().parent().after(html);
+                    }else{
+                        var html="<tr id='account'><td>账号</td><td><select name='account' class='form-control'>";
+                        $.each(data.data,function(a,b){
+                            html+="<option value='"+b+"'>"+b+"</option>";
+                        })
+                        html+="</select></td></tr>";
+                        $(v).parent().parent().after(html);
+                    }
+                })
+            }
+        }
+        $("form").submit(function(){
+            $.post("{:U('apply')}",$("form").serialize(),function(ret){
+                layer.msg(ret.msg);
+            });
+            return false;
+        })
+    </script>
+
+</block>

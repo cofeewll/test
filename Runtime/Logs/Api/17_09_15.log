@@ -1,0 +1,208 @@
+[ 2017-09-15T14:14:11+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0070s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='2',`paySn`='20170915141411626871',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0100s ]
+
+[ 2017-09-15T14:19:24+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0030s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_orders` SET `payType`='2',`paySn`='20170915141923845201',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0010s ]
+
+[ 2017-09-15T14:20:18+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0030s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='2',`paySn`='20170915142017272401',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0520s ]
+NOTIC: [4096] Object of class WxPayUnifiedOrder could not be converted to string D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 38 行.
+
+[ 2017-09-15T14:38:05+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0170s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_orders` SET `payType`='2',`paySn`='20170915143805373171',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0050s ]
+
+[ 2017-09-15T14:43:26+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0110s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_orders` SET `payType`='1',`paySn`='20170915144326374521',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0010s ]
+NOTIC: [2] openssl_sign(): supplied key param cannot be coerced into a private key D:\wamp\www\wllspace\php\wgshop\Api\alipayapp\aop\AopClient.php 第 170 行.
+
+[ 2017-09-15T14:47:11+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0156s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='1',`paySn`='20170915144711394651',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0266s ]
+NOTIC: [8] Undefined index: appid D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 111 行.
+NOTIC: [8] Undefined index: method D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 112 行.
+NOTIC: [8] Undefined index: timestamp D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 115 行.
+NOTIC: [8] Undefined index: rsaPrivateKey D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 121 行.
+NOTIC: [2] openssl_sign(): supplied key param cannot be coerced into a private key D:\wamp\www\wllspace\php\wgshop\Api\alipayapp\aop\AopClient.php 第 170 行.
+
+[ 2017-09-15T14:49:00+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0050s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_orders` SET `payType`='1',`paySn`='20170915144900493771',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0000s ]
+
+[ 2017-09-15T14:51:03+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0040s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='1',`paySn`='20170915145103709241',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0570s ]
+
+[ 2017-09-15T14:51:56+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0060s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='1',`paySn`='20170915145156387591',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: timestamp D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 115 行.
+NOTIC: [8] Undefined index: rsaPrivateKey D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 121 行.
+NOTIC: [2] openssl_sign(): supplied key param cannot be coerced into a private key D:\wamp\www\wllspace\php\wgshop\Api\alipayapp\aop\AopClient.php 第 170 行.
+
+[ 2017-09-15T14:54:40+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0040s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='1',`paySn`='20170915145440975931',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: rsaPrivateKey D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 121 行.
+NOTIC: [2] openssl_sign(): supplied key param cannot be coerced into a private key D:\wamp\www\wllspace\php\wgshop\Api\alipayapp\aop\AopClient.php 第 170 行.
+
+[ 2017-09-15T15:19:28+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0430s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0050s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='1',`paySn`='20170915151928685261',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: rsaPrivateKey D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\PayUtil.class.php 第 121 行.
+NOTIC: [2] openssl_sign(): supplied key param cannot be coerced into a private key D:\wamp\www\wllspace\php\wgshop\Api\alipayapp\aop\AopClient.php 第 170 行.
+
+[ 2017-09-15T15:19:44+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0050s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_orders` SET `payType`='2',`paySn`='20170915151943488091',`userMoney`='0',`payMoney`='20.00' WHERE `id` = 24 [ RunTime:0.0570s ]
+
+[ 2017-09-15T15:23:37+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0060s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_orders` SET `payType`='0',`paySn`='20170915152337862971',`userMoney`='20.00',`payMoney`='0',`status`='1',`payTime`='1505460217' WHERE `id` = 24 [ RunTime:0.0652s ]
+SQL: SELECT `id`,`uid`,`shopId`,`amount`,`userMoney`,`payMoney`,`status` FROM `wg_orders` WHERE `paySn` = '20170915152337862971'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_order_goods` WHERE `orderId` = 24  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0060s ]
+SQL: UPDATE `wg_goods_spec` SET `store`=store-1 WHERE `goodsId` = 1 AND `id` = 7 [ RunTime:0.0000s ]
+SQL: SELECT SUM(store) AS tp_sum FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0156s ]
+SQL: UPDATE `wg_goods` SET `stock`='18' WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `sellNum`=sellNum+1 WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0156s ]
+SQL: UPDATE `wg_shop` SET `sellNum`=sellNum+1 WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SELECT `money` FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_user` SET `money`=money-20 WHERE `id` = 1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_user_money` [ RunTime:0.0156s ]
+SQL: INSERT INTO `wg_user_money` (`uid`,`type`,`cmoney`,`beforeMoney`,`afterMoney`,`createTime`) VALUES ('1','3','20','940.00','920','1505460217') [ RunTime:0.0000s ]
+
+[ 2017-09-15T15:24:50+08:00 ] 127.0.0.1 /index.php/Api/Cart/payOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`orderSn`,`amount`,`status` FROM `wg_orders` WHERE `id` IN ('24')  [ RunTime:0.0000s ]
+

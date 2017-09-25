@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 62.5%;
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size:56.3%; /* 10÷16=62.5% */
+    }
+}
+@media (max-width: 321px) {
+    html {
+        font-size:50%; /* 10÷16=62.5% */
+    }
+}
+
+/* 去除iPhone中默认的input样式 */
+input[type=text],input[type=number],input[type=tel],input[type=search],input[type=email],input[type=date],input[type=month],input[type=password],select,textarea{ -webkit-appearance:none; appearance:none; resize: none;border: none;background: none;}
+/* 去除数字input中的上下箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input[type=text],input[type=number],input[type=tel],input[type=search],input[type=email],input[type=date],input[type=password],textarea,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    font-family: Microsoft YaHei,Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;
+    list-style:none;
+    -webkit-appearance:none;
+    outline:none;
+    word-wrap:break-word;
+    word-break:break-all;}
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+    display: block;
+}
+/* 图片自适应 */
+img {
+    height: auto;
+    width:auto\9; /* ie8 */
+    -ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+*:focus {
+    outline:none;
+}
+/* 清零 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0;}
+
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696;}
+a:hover{color:#969696; text-decoration:none;}
+ul,ol,li{list-style:none;}
+
+fieldset,img{border: none;}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+caption, th {
+    text-align:left;
+}
+
+input:password {
+    ime-mode:disabled;
+}
+/*连续英文、数字换行*/
+.wordwrap { word-break: break-all; word-wrap: break-word; }
+*{box-sizing:border-box;}
+.line1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    line-clamp: 1;
+    box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.line2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    line-clamp: 2;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.centerboth {
+    display:flex;
+    display: -webkit-flex;
+    align-items:center;
+    -webkit-align-items:center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.bgcolor {
+    background: #F5F5F5;
+}
+
+.zhucebox {
+    padding: 3vw;
+}
+.zhucebox ul {
+    overflow: hidden;
+    border-radius: 3px;
+}
+.zhucebox li {
+    width: 100%;
+    height: 11vw;
+    background: #ffffff;
+    border-bottom: 1px solid #F5F5F5;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.zhucebox li input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    font-size: 1.5rem;
+}
+
+
+.zhucebox li.code input {
+    padding-right: 30vw;
+}
+
+.zhucebox li.code a {
+    display: block;
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    height: 9vw;
+    line-height: 9vw;
+    background: #FB5E33;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 9vw;
+}
+
+.zhucebox li.code a.cur {
+    background: #999999;
+}
+
+.checkLable {
+    font-size: 1.4rem;
+    padding: 6vw 0 6vw 5vw;
+    background: url("../images/check_un.png") no-repeat center left;
+    background-size: 4vw 4vw;
+}
+.checkLable.cur {
+    background: url("../images/check.png") no-repeat center left;
+    background-size: 4vw 4vw;
+}
+.checkLable a {
+    color: #FB5E33;
+}
+
+
+.btncsn {
+    height: 11vw;
+    width: 100%;
+    text-align: center;
+    background: #FB5E33;
+    font-size: 1.6rem;
+    line-height: 11vw;
+    border-radius: 11vw;
+}
+.btncsn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+.downBg {
+    background: url("../images/downbg.png") no-repeat center top;
+    background-size: 100% auto;
+}
+
+.erweim {
+    width: 40vw;
+    height: 40vw;
+    background: url("../images/codebox.png") no-repeat center top;
+    background-size: auto 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -20vw;
+    bottom: 55vw;
+}
+
+.erweim img {
+    width: 26vw;
+    height: 26vw;
+    position: absolute;
+    top: 10vw;
+    left: 6.5vw;
+}
+
+.downText {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 15vw;
+}
+.downText h2 {
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-bottom: 3vw;
+}
+.downText p {
+    font-size: 1.6rem;
+    color: #666666;
+    margin-bottom: 5vw;
+}
+
+.downText a {
+    padding: 1vw 1vw;
+    border: 1px solid #333333;
+    width: 22vw;
+    font-size: 1.3rem;
+    color: #333333;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.downText a img {
+    width: 3vw;
+    margin-right: 5px;
+}
+
+.xieyibox {
+    padding: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+

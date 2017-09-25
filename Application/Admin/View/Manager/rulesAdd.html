@@ -1,0 +1,78 @@
+<extend name="Public:header" />
+<block name="content">
+	<body class="gray-bg">
+	<div class="wrapper wrapper-content  animated fadeInRight">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<form role="form" action="{:U('Manager/rulesSave')}" id="form-add" class="form-horizontal">
+							<input type="hidden" name="id" <notempty name="info">value="{$info.id}"</notempty> />
+
+							<div class="form-group">
+								<label class="col-sm-2 control-label" >上级</label>
+								<div class="col-sm-10 shot">
+									<select class="form-control" style="width:60%;display: inline-block;" name="pid" >
+										<option value="0">顶级</option>
+										<foreach name="rules" item="v">
+											<option value="{$v.id}" <notempty name="info"><eq name="info.pid" value="$v.id" >selected</eq></notempty> >{$v.html}{$v.title}</option>
+										</foreach>
+									</select>
+									<label style="color: red;font-size:20px;" >&nbsp;*</label>
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="title">名称：</label>
+								<div class="col-sm-10 shot">
+									<input type="text" class="form-control" id="title" name="title" <notempty name="info">value="{$info.title}" </notempty>style="width:60%;display: inline-block;" autocomplete="off" placeholder="名称">
+									<label style="color: red;font-size:20px;" >&nbsp;*</label>
+								</div>
+
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="name">标识：</label>
+								<div class="col-sm-10 shot">
+									<input type="text" class="form-control" id="name" name="name" <notempty name="info">value="{$info.name}" </notempty>style="width:60%;display: inline-block;" autocomplete="off" placeholder="标识">
+									<label style="color: red;font-size:20px;" >&nbsp;*</label>
+								</div>
+
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="icon">图标：</label>
+								<div class="col-sm-10 shot">
+									<input type="text" class="form-control" id="icon" name="icon" <notempty name="info">value="{$info.icon}" </notempty>style="width:60%;" autocomplete="off" placeholder="图标">
+								</div>
+
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="status">状态：</label>
+								<div class="col-sm-10 shot">
+									<label class="i-checks">
+										<input type="radio" value="1" name="status" <notempty name="info"><if condition="$info['status'] eq 1">checked</if><else/>checked</notempty> > <i></i> 正常&nbsp;&nbsp;&nbsp;&nbsp;
+									</label>
+									<label class="i-checks">
+										<input type="radio" value="0" name="status" <notempty name="info"><if condition="$info['status'] eq 0">checked</if></notempty> > <i></i> 禁用
+									</label>
+								</div>
+
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2">&nbsp;</label>
+								<button class="btn btn-primary" type="submit">保存</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+
+</block>
+
+

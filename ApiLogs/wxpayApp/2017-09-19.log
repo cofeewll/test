@@ -1,0 +1,2 @@
+[2017-09-19 16:11:43][debug] input data :{"paySn":"A9190870383754d001","money":2000,"body":"\u552f\u516c\u5546\u57ce-\u8ba2\u5355\u652f\u4ed8","notify_url":"http:\/\/wgshop.com\/index.php\/Api\/Notify\/weixin"}
+[2017-09-19 16:11:44][debug] return data :{"appid":"wx4742a6c05aca25e8","mch_id":"1363352302","nonce_str":"44JrYhEo2jstdF3c","prepay_id":"wx20170919161141cb723aef590561208730","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"D140FB8F44C6EF15195C10FAB5F64FE3","trade_type":"APP"}

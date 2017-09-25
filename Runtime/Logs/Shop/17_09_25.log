@@ -1,0 +1,787 @@
+[ 2017-09-25T09:29:10+08:00 ] 127.0.0.1 /shop.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T09:29:10+08:00 ] 127.0.0.1 /shop.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-25T09:29:17+08:00 ] 127.0.0.1 /shop.php/Login/loginAuth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = '10001' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T09:29:17+08:00 ] 127.0.0.1 /shop.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T09:29:17+08:00 ] 127.0.0.1 /shop.php/Index/defaultIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`amount` FROM `wg_orders` WHERE ( status=2 and shipTime<1505006957 )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( status in(1,2,3,5) and shopId=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( status in(1,2,3,5) and shopId=1 and createTime>=1506268800 and createTime<=1506355199 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_orders` WHERE ( shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_orders` WHERE ( createTime>=1506268800 and createTime<=1506355199 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE ( shopId=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE ( createTime>=1506268800 and createTime<=1506355199 and shopId=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_shop_withdraw` [ RunTime:0.0290s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_shop_withdraw` WHERE ( shopId=1 and status=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=1 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=1 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=2 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=2 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=3 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=3 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=4 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=4 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=5 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=5 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=6 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=6 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=7 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=7 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=8 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=8 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=9 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=9 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=10 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=10 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=11 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=11 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=12 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=12 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=13 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=13 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=14 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=14 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=15 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=15 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=16 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=16 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=17 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=17 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=18 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=18 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=19 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=19 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=20 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=20 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=21 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=21 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=22 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=22 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=23 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=23 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=24 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=24 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=25 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=25 and shopId=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-25T09:29:25+08:00 ] 127.0.0.1 /shop.php/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT `cid` FROM `wg_goods` WHERE `shopId` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `id` IN ('4','4','6','4')  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T09:29:26+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1506302966024&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT g.*,c.name as cname FROM wg_goods g left JOIN wg_goods_cate c on c.id = g.cid  WHERE `shopId` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_goods g WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-25T09:29:27+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0020s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `shopId` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [province] => 新疆维吾尔自治区
+            [fee] => 
+        )
+
+    [1] => Array
+        (
+            [province] => 台湾省
+            [fee] => 
+        )
+
+    [2] => Array
+        (
+            [province] => 西藏自治区
+            [fee] => 
+        )
+
+    [3] => Array
+        (
+            [province] => 香港特别行政区
+            [fee] => 
+        )
+
+    [4] => Array
+        (
+            [province] => 澳门特别行政区
+            [fee] => 
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 266 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 267 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 277 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T09:29:27+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=&spec_type=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.1030s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 0 ) ORDER BY `sorts` asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T09:29:28+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0270s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0150s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 235 行.
+
+[ 2017-09-25T09:29:34+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetCates.html?fid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+
+[ 2017-09-25T09:40:14+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-25T09:40:14+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 235 行.
+
+[ 2017-09-25T09:40:15+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+
+[ 2017-09-25T09:40:16+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 254 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+
+[ 2017-09-25T09:40:17+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+NOTIC: [8] Undefined index: 2_6 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 254 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+
+[ 2017-09-25T09:40:17+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+NOTIC: [8] Undefined index: 2_6 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 254 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+NOTIC: [8] Undefined index: 1_7 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 254 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+NOTIC: [8] Undefined index: 2_7 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 254 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 255 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 256 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 257 行.
+
+[ 2017-09-25T09:40:52+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '123456' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: images D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1276 行.
+NOTIC: [8] Undefined index: images D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 32 行.
+
+[ 2017-09-25T09:41:05+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '123456' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-25T09:41:21+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '123456' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T09:41:29+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '123456' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wg_goods` (`id`,`shopId`,`name`,`goodsSn`,`cid`,`price`,`stock`,`img`,`sorts`,`detail`,`typeId`,`shipFee`,`createTime`,`updateTime`) VALUES ('0','1','123456','','4','10','20','/Uploads/images/20170925/59c85e6ff3c8a.jpg','50','&lt;img src=&quot;/Uploads/kindeditor/image/20170925/20170925034117_15597.jpg&quot; alt=&quot;&quot; /&gt;','1','10','1506303689','1506303689') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0020s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000007' WHERE ( id = 7 and goodsSn = '' ) [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0020s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 7 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_picture` (`sid`,`path`,`type`) VALUES ('7','/Uploads/images/20170925/59c85ea981c06.jpg','1'),('7','/Uploads/images/20170925/59c85eac5628b.jpg','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 7 )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_goods_spec` (`goodsId`,`key`,`key_name`,`price`,`store`) VALUES ('7','1_6','颜色:白色 尺寸:M','0.01','2'),('7','2_6','颜色:蓝色 尺寸:M','0.01','3'),('7','1_7','颜色:白色 尺寸:L','0.01','5'),('7','2_7','颜色:蓝色 尺寸:L','0.01','10') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0000s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 7  [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 7 AND `province` IN ('新疆维吾尔自治区','台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0624s ]
+
+[ 2017-09-25T09:41:37+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '123456' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wg_goods` (`id`,`shopId`,`name`,`goodsSn`,`cid`,`price`,`stock`,`img`,`sorts`,`detail`,`typeId`,`shipFee`,`createTime`,`updateTime`) VALUES ('0','1','123456','','4','10','20','/Uploads/images/20170925/59c85e6ff3c8a.jpg','50','&lt;img src=&quot;/Uploads/kindeditor/image/20170925/20170925034117_15597.jpg&quot; alt=&quot;&quot; /&gt;','1','10','1506303697','1506303697') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000008' WHERE ( id = 8 and goodsSn = '' ) [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0020s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 8 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_picture` (`sid`,`path`,`type`) VALUES ('8','/Uploads/images/20170925/59c85ea981c06.jpg','1'),('8','/Uploads/images/20170925/59c85eac5628b.jpg','1') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 8 )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_goods_spec` (`goodsId`,`key`,`key_name`,`price`,`store`) VALUES ('8','1_6','颜色:白色 尺寸:M','0.01','2'),('8','2_6','颜色:蓝色 尺寸:M','0.01','3'),('8','1_7','颜色:白色 尺寸:L','0.01','5'),('8','2_7','颜色:蓝色 尺寸:L','0.01','10') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0030s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 8  [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 8 AND `province` IN ('新疆维吾尔自治区','台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0000s ]
+
+[ 2017-09-25T09:43:12+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '123456' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `wg_goods` (`id`,`shopId`,`name`,`goodsSn`,`cid`,`price`,`stock`,`img`,`sorts`,`detail`,`typeId`,`shipFee`,`createTime`,`updateTime`) VALUES ('0','1','123456','','4','10','20','/Uploads/images/20170925/59c85e6ff3c8a.jpg','50','&lt;img src=&quot;/Uploads/kindeditor/image/20170925/20170925034117_15597.jpg&quot; alt=&quot;&quot; /&gt;','1','10','1506303792','1506303792') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0020s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000009' WHERE ( id = 9 and goodsSn = '' ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 9 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_picture` (`sid`,`path`,`type`) VALUES ('9','/Uploads/images/20170925/59c85ea981c06.jpg','1'),('9','/Uploads/images/20170925/59c85eac5628b.jpg','1') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 9 )  [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_goods_spec` (`goodsId`,`key`,`key_name`,`price`,`store`) VALUES ('9','1_6','颜色:白色 尺寸:M','0.01','2'),('9','2_6','颜色:蓝色 尺寸:M','0.01','3'),('9','1_7','颜色:白色 尺寸:L','0.01','5'),('9','2_7','颜色:蓝色 尺寸:L','0.01','10') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0030s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 9  [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 9 AND `province` IN ('新疆维吾尔自治区','台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0000s ]
+SQL: SELECT SUM(store) AS tp_sum FROM `wg_goods_spec` WHERE `goodsId` = 9 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `stock`='20' WHERE `id` = 9 [ RunTime:0.0000s ]
+
+[ 2017-09-25T09:43:13+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `shopId` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [0] => Array
+        (
+            [province] => 新疆维吾尔自治区
+            [fee] => 
+        )
+
+    [1] => Array
+        (
+            [province] => 台湾省
+            [fee] => 
+        )
+
+    [2] => Array
+        (
+            [province] => 西藏自治区
+            [fee] => 
+        )
+
+    [3] => Array
+        (
+            [province] => 香港特别行政区
+            [fee] => 
+        )
+
+    [4] => Array
+        (
+            [province] => 澳门特别行政区
+            [fee] => 
+        )
+
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 266 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 267 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 277 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T09:43:14+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=&spec_type=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 0 ) ORDER BY `sorts` asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T09:43:14+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 235 行.
+
+[ 2017-09-25T09:44:22+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1506303862518&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT g.*,c.name as cname FROM wg_goods g left JOIN wg_goods_cate c on c.id = g.cid  WHERE `shopId` = '1' ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_goods g WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:09:17+08:00 ] 127.0.0.1 /shop.php/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: UPDATE `wg_orders` SET `status`='4' WHERE ( status=0 and createTime<1506303557 and 1=1 ) [ RunTime:0.0000s ]
+SQL: SELECT `id`,`amount` FROM `wg_orders` WHERE ( status=2 and shipTime<1505009357 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:09:18+08:00 ] 127.0.0.1 /shop.php/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_orders o left JOIN wg_user as u on u.id=o.uid left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT o.*,u.number,s.username FROM wg_orders o left JOIN wg_user as u on u.id=o.uid left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0210s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM wg_orders o left JOIN wg_user as u on u.id=o.uid left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(goodsAmount) AS tp_sum FROM wg_orders o left JOIN wg_user as u on u.id=o.uid left JOIN wg_shop as s on s.id=o.shopId  WHERE ( shopId=1 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\OrderController.class.php 第 71 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-09-25T10:09:25+08:00 ] 127.0.0.1 /shop.php/Order/print_
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0030s ]
+SQL: SELECT `title` FROM `wg_shop` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1146:Table 'wgshop.wg_shop_send' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wg_shop_send`
+ERR: 1146:Table 'wgshop.wg_shop_send' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wg_shop_send`
+
+[ 2017-09-25T10:09:35+08:00 ] 127.0.0.1 /shop.php/Order/print_
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0030s ]
+SQL: SELECT `title` FROM `wg_shop` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1146:Table 'wgshop.wg_shop_send' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wg_shop_send`
+ERR: 1146:Table 'wgshop.wg_shop_send' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wg_shop_send`
+
+[ 2017-09-25T10:09:47+08:00 ] 127.0.0.1 /shop.php/Order/print_
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `wg_shop` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0156s ]
+ERR: 1146:Table 'wgshop.wg_shop_send' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wg_shop_send`
+ERR: 1146:Table 'wgshop.wg_shop_send' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wg_shop_send`
+
+[ 2017-09-25T10:44:47+08:00 ] 127.0.0.1 /shop.php/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_comment` [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:44:48+08:00 ] 127.0.0.1 /shop.php/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_order_comment` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_order_comment oc left JOIN wg_orders as o on o.id=oc.orderId left JOIN wg_user as u on u.id=oc.uid left JOIN wg_shop as s on s.id=oc.shopId left JOIN wg_goods as g on g.id=oc.goodsId  WHERE ( oc.shopId=1 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SELECT oc.*,o.orderSn,u.number,s.username,g.name FROM wg_order_comment oc left JOIN wg_orders as o on o.id=oc.orderId left JOIN wg_user as u on u.id=oc.uid left JOIN wg_shop as s on s.id=oc.shopId left JOIN wg_goods as g on g.id=oc.goodsId  WHERE ( oc.shopId=1 ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:44:51+08:00 ] 127.0.0.1 /shop.php/Comment/detail/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_order_comment` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_order_comment` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0020s ]
+SQL: SELECT `number`,`nickname`,`img`,`aims` FROM `wg_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT `img`,`name` FROM `wg_goods` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

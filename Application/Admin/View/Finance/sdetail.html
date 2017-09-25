@@ -1,0 +1,120 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>商家信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>手机号</td><td>{$shop.phone}</td></tr>
+                            <tr><td>服务商名称</td><td>{$shop.userName}</td></tr>
+                            <tr><td>头像</td><td><img src="{$data.server.HeadImg}" style="width:60px;height:60px;"></td></tr>
+                            <tr><td>提现时间</td><td>{$data.addTime|date="Y-m-d H:i:s",###}</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>提现信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>提现金额</td><td>{$data.amount}</td></tr>
+                            <tr><td>手续费</td><td>{$data.fee}</td></tr>
+                            <tr><td>提现账户</td><td>
+                                <if condition="$data['type'] eq 1">支付宝</if>
+                                <if condition="$data['type'] eq 2">微信</if>
+                                <if condition="$data['type'] eq 3">银行卡</if>
+                            </td></tr>
+                            <tr><td>账户号</td><td>{$data.account}</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>审批信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr><td>当前状态</td><td>
+                                <if condition="$data['status'] eq 0">待处理</if>
+                                <if condition="$data['status'] eq 1">同意提现</if>
+                                <if condition="$data['status'] eq 2">拒绝提现</if>
+                            </td></tr>
+                            <tr><td>审批人</td><td>
+                                <if condition="$data['admin_name']">
+                                    {$data.admin_name}
+                                    <else/>
+                                    {$username}
+                                </if>
+
+                            </td></tr>
+                            <tr>
+                                <td>备注</td>
+                                <td>
+                                    <textarea class="form-control" name="remark">{$data.remark}</textarea>
+                                </td></tr>
+                            <tr><td>处理类型</td>
+                                <td>
+                                    <if condition="$data['status'] eq 1">
+                                        <input type="radio" name="status" value="1" checked>同意提现
+                                        <else/>
+                                        <input type="radio" name="status" value="1">同意提现
+                                    </if>
+                                    <if condition="$data['status'] eq 2">
+                                        <input type="radio" name="status" value="2" checked>拒绝提现
+                                        <else/>
+                                        <input type="radio" name="status" value="2">拒绝提现
+                                    </if>
+                                </td></tr>
+                            <if condition="$data['admin_name']">
+                                <tr>
+                                    <td>审批时间</td>
+                                    <td>{$data.auditTime|date="Y-m-d H:i:s",###}</td>
+                                </tr>
+                                <else/>
+                                <tr>
+                                    <td>操作</td>
+                                    <td><button class="btn btn-sm btn-primary" onclick="submit({$data.id})">提交</button></td>
+                                </tr>
+
+                            </if>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+    <script>
+        function submit(id){
+            var uwState=$("input[name=status]:checked").val();
+            var uwRemark=$(":input[name=remark]").val();
+            if(!uwState){
+                layer.msg("请选择处理类型");return false;
+            }
+            $.post("{:U('checkServer')}",{status:uwState,remark:uwRemark,id:id},function(ret){
+                layer.msg(ret.msg);
+                window.location.reload();
+            })
+        }
+    </script>
+</block>

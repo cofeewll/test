@@ -1,0 +1,865 @@
+[ 2017-09-25T09:18:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.127007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.074004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.074004s ]
+
+[ 2017-09-25T09:18:09+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.249907s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.249907s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.281113s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.281113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.097001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.097001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.122102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.122102s ]
+
+[ 2017-09-25T09:18:43+08:00 ] 127.0.0.1 /index.php/Admin/Login/loginAuth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-09-25T09:19:40+08:00 ] 127.0.0.1 /index.php/Admin/Login/loginAuth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-09-25T09:20:07+08:00 ] 127.0.0.1 /index.php/Admin/Login/loginAuth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+
+
+[ 2017-09-25T09:20:11+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-25T09:20:42+08:00 ] 127.0.0.1 /index.php/Admin/Login/loginAuth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_admin` [ RunTime:0.7542s ]
+SQL: SELECT * FROM `wg_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.3432s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group_access` [ RunTime:0.1092s ]
+SQL: SELECT b.* FROM wg_auth_group_access a INNER JOIN wg_auth_group b on a.group_id = b.id  WHERE `uid` = '1' LIMIT 1   [ RunTime:0.4992s ]
+SQL: UPDATE `wg_admin` SET `wrongNum`='0' WHERE `mobile` = 'admin' [ RunTime:0.0468s ]
+SQL: UPDATE `wg_admin` SET `loginTime`='1506302441',`loginIp`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.2496s ]
+SQL: SHOW COLUMNS FROM `wg_login_log` [ RunTime:0.7020s ]
+SQL: INSERT INTO `wg_login_log` (`loginTime`,`loginIp`,`adminId`,`username`) VALUES ('1506302441','127.0.0.1','1','admin') [ RunTime:0.1560s ]
+
+[ 2017-09-25T09:20:43+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Index/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.1316s ]
+SQL: SHOW COLUMNS FROM `wg_order_refund` [ RunTime:0.1150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_order_refund` WHERE ( status=0 and createTime<1506216043 and isSend=0 ) LIMIT 1   [ RunTime:0.0498s ]
+SQL: SELECT `title` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_message` [ RunTime:0.1800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_message` WHERE ( readTime=0 ) LIMIT 1   [ RunTime:0.0686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.367405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.368405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-09-25T09:20:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/defaultIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Index/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wg_orders` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`amount` FROM `wg_orders` WHERE ( status=2 and shipTime<1505006446 )  [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( status in(1,2,3,5) and createTime>=1506268800 and createTime<=1506355199 ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_orders` WHERE ( status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_orders` WHERE ( createTime>=1506268800 and createTime<=1506355199 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.2154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_user` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_user` WHERE ( createTime>=1506268800 and createTime<=1506355199 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_user` WHERE ( loginTime>=1503624046 and loginTime<=1506355199 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=1 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=2 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=2 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=3 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=3 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=4 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=4 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=5 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=5 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=6 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=6 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=7 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=7 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=8 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=8 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=9 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=9 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=10 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=10 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=11 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=11 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=12 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=12 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=13 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=13 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=14 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=14 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=15 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=15 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=16 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=16 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=17 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=17 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=18 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=18 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=19 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=19 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=20 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=20 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=21 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=21 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=22 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=22 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=23 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=23 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=24 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=24 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=25 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amount) AS tp_sum FROM `wg_orders` WHERE ( oYear=2017 and oMonth=09 and oDate=25 and status in(1,2,3,5) ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_feedback` [ RunTime:0.0810s ]
+SQL: SELECT * FROM `wg_feedback` ORDER BY id desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_login_log` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_login_log` ORDER BY id desc LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+NOTIC: [8] Undefined index: llIp D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Admin\a1f61252881b3a73bc545a9a4cc92ef7.php ç¬¬ 195 è¡Œ.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.188011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-09-25T09:40:00+08:00 ] 127.0.0.1 /index.php/Admin/UploadFile/upimage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Non-static method Common\Util\UploadUtil::upfiles() should not be called statically D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\UploadUtil.class.php ç¬¬ 15 è¡Œ.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Upload.class.php ç¬¬ 170 è¡Œ.
+
+[ 2017-09-25T09:40:57+08:00 ] 127.0.0.1 /index.php/Admin/UploadFile/upimage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Common\Util\UploadUtil::upfiles() should not be called statically D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\UploadUtil.class.php ç¬¬ 15 è¡Œ.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Upload.class.php ç¬¬ 170 è¡Œ.
+
+[ 2017-09-25T09:41:00+08:00 ] 127.0.0.1 /index.php/Admin/UploadFile/upimage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Non-static method Common\Util\UploadUtil::upfiles() should not be called statically D:\wamp\www\wllspace\php\wgshop\Application\Common\Util\UploadUtil.class.php ç¬¬ 15 è¡Œ.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Upload.class.php ç¬¬ 170 è¡Œ.
+
+[ 2017-09-25T10:22:50+08:00 ] 127.0.0.1 /index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-25T10:22:51+08:00 ] 127.0.0.1 /index.php/Admin/Article/index.html?_search=false&nd=1506306171739&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0060s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT * FROM `wg_article` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_article` LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2017-09-25T10:22:58+08:00 ] 127.0.0.1 /index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-25T10:23:05+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1185 è¡Œ.
+SQL: SELECT * FROM `wg_article` WHERE `title` = 'dd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1128 è¡Œ.
+SQL: INSERT INTO `wg_article` (`id`,`title`,`type`,`context`,`sorts`,`status`,`addTime`,`updateTime`) VALUES ('0','dd','1','dd','50','1','1506306185','1506306185') [ RunTime:0.0312s ]
+
+[ 2017-09-25T10:23:07+08:00 ] 127.0.0.1 /index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-25T10:23:08+08:00 ] 127.0.0.1 /index.php/Admin/Article/index.html?_search=false&nd=1506306187970&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT * FROM `wg_article` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_article` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:23:11+08:00 ] 127.0.0.1 /index.php/Admin/Articel/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: æ— æ³•åŠ è½½æŽ§åˆ¶å™¨:Articel
+
+[ 2017-09-25T10:24:34+08:00 ] 127.0.0.1 /index.php/Admin/Articel/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: æ— æ³•åŠ è½½æŽ§åˆ¶å™¨:Articel
+
+[ 2017-09-25T10:24:39+08:00 ] 127.0.0.1 /index.php/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0156s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-25T10:24:40+08:00 ] 127.0.0.1 /index.php/Admin/Article/index.html?_search=false&nd=1506306280126&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT * FROM `wg_article` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_article` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:24:42+08:00 ] 127.0.0.1 /index.php/Admin/Article/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_article` WHERE `id` = 2 [ RunTime:0.0156s ]
+
+[ 2017-09-25T10:24:44+08:00 ] 127.0.0.1 /index.php/Admin/Article/index.html?_search=false&nd=1506306284479&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0040s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT * FROM `wg_article` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_article` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:26:29+08:00 ] 127.0.0.1 /index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0070s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:26:35+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1185 è¡Œ.
+SQL: SELECT * FROM `wg_article` WHERE `title` = 'rr' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1128 è¡Œ.
+SQL: INSERT INTO `wg_article` (`id`,`title`,`type`,`context`,`sorts`,`status`,`addTime`,`updateTime`) VALUES ('0','rr','1','rr','50','1','1506306395','1506306395') [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:26:35+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1185 è¡Œ.
+SQL: SELECT * FROM `wg_article` WHERE `title` = 'rr' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-25T10:26:35+08:00 ] 127.0.0.1 /index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:26:37+08:00 ] 127.0.0.1 /index.php/Admin/Article/index.html?_search=false&nd=1506306397402&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT * FROM `wg_article` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_article` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:26:46+08:00 ] 127.0.0.1 /index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:26:53+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1185 è¡Œ.
+SQL: SELECT * FROM `wg_article` WHERE `title` = 'ss' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1128 è¡Œ.
+SQL: INSERT INTO `wg_article` (`id`,`title`,`type`,`context`,`sorts`,`status`,`addTime`,`updateTime`) VALUES ('0','ss','1','ss','50','1','1506306413','1506306413') [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:26:53+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php ç¬¬ 1185 è¡Œ.
+SQL: SELECT * FROM `wg_article` WHERE `title` = 'ss' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-25T10:26:53+08:00 ] 127.0.0.1 /index.php/Admin/Article/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:26:55+08:00 ] 127.0.0.1 /index.php/Admin/Article/index.html?_search=false&nd=1506306415017&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT * FROM `wg_article` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_article` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:27:16+08:00 ] 127.0.0.1 /index.php/Admin/Article/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0156s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_article` WHERE `id` = 4 [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:27:17+08:00 ] 127.0.0.1 /index.php/Admin/Article/index.html?_search=false&nd=1506306437674&rows=10&page=1&sidx=sorts&sord=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Article/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_article` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT * FROM `wg_article` ORDER BY sorts asc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_article` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T10:45:28+08:00 ] 127.0.0.1 /index.php/Admin/Feedback/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Feedback/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-25T10:45:28+08:00 ] 127.0.0.1 /index.php/Admin/Feedback/index.html?_search=false&nd=1506307528343&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0030s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Feedback/index' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_feedback` [ RunTime:0.0250s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT f.*,`number`,`nickname` FROM wg_feedback f INNER JOIN wg_user on wg_user.id = f.uid  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_feedback` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-25T10:45:34+08:00 ] 127.0.0.1 /index.php/Admin/Feedback/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Feedback/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_feedback` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_feedback` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_feedback` WHERE `id` = 2 [ RunTime:0.0658s ]
+
+[ 2017-09-25T10:45:36+08:00 ] 127.0.0.1 /index.php/Admin/Feedback/index.html?_search=false&nd=1506307536125&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Feedback/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_feedback` [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT f.*,`number`,`nickname` FROM wg_feedback f INNER JOIN wg_user on wg_user.id = f.uid  ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Db\Driver.class.php ç¬¬ 504 è¡Œ.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_feedback` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-25T14:24:20+08:00 ] 127.0.0.1 /index.php/Admin/Shop/audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0700s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Shop/index' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-09-25T14:24:24+08:00 ] 127.0.0.1 /index.php/Admin/Shop/audit.html?_search=false&nd=1506320664181&rows=10&page=1&sidx=regTime&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT `rules` FROM `wg_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `id` IN ('1','30','31','32','33','34','23','25','24','37','38','35','36','26','27','28','29','41','22','8','42','19','20','9','39','40','2','3','4','21') AND `status` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_auth_rule` WHERE `name` = 'Shop/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.1000s ]
+SQL: SELECT * FROM `wg_shop` WHERE `status` IN ('-1','2') ORDER BY regTime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_shop` WHERE `status` IN ('-1','2') LIMIT 1   [ RunTime:0.0010s ]
+

@@ -1,0 +1,94 @@
+<extend name="Public:header" />
+<block name="stylejs">
+<script charset="utf-8" src="__STATIC__/laydate/laydate.js"></script>
+<link rel="stylesheet" href="__STATIC__/kindeditor/themes/simple/simple.css" />
+<script type="text/javascript" charset="utf-8" src="__STATIC__/kindeditor/kindeditor-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__STATIC__/kindeditor/lang/zh_CN.js"></script>
+</block>
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form role="form" action="{:U('Banner/add')}" id="form-add" class="form-horizontal">
+                            <input type="hidden" <notempty name="info">value="{$info['id']}"</notempty> name="id" />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >标题</label>
+                                <div class="col-sm-10 shot">
+                                    <input type="text" class="form-control" <notempty name="info">value="{$info['title']}"</notempty> name="title" style="width:60%;" autocomplete="off" placeholder="标题">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >封面图</label>
+                                <div class="col-sm-10 shot">
+                                    <div>(支持:jpg、jpeg、png、gif； 尺寸：宽750*高430px；大小：限5M内)</div>
+                                    <div id="img"></div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <!-- <div class="form-group">
+                                <label class="col-sm-2 control-label" >内容</label>
+                                <div class="col-sm-10 shot">
+                                    <textarea id="editor" name="content" class="form-control" style="width: 60%;height:300px;"><notempty name="info">value="{$info['content']}"</notempty></textarea>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div> -->
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" >排序</label>
+                                <div class="col-sm-10 shot">
+                                    <input type="number" class="form-control" <notempty name="info">value="{$info['sorts']}"<else/>value="50"</notempty> name="sorts"  style="width:60%;"  autocomplete="off" style="width:250px;">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">状态</label>
+                                <div class="col-sm-10 shot">
+                                    <label class="i-checks">
+                                        <input type="radio" value="1" name="status" <notempty name="info"><if condition="$info['status'] eq 1">checked</if><else/>checked</notempty> > <i></i> 正常&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <label class="i-checks">
+                                        <input type="radio" value="0" name="status" <notempty name="info"><if condition="$info['status'] eq 0">checked</if></notempty> > <i></i> 禁用&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2">&nbsp;</label>
+                                <button class="btn btn-primary" type="submit">保存</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <link rel="stylesheet" href="__STATIC__/Huploadify/Huploadify.css">
+    <script charset="utf-8" src="__STATIC__/Huploadify/jquery.Huploadify.js"></script>
+    <script charset="utf-8" src="__STATIC__/Huploadify/Huploadify.js"></script>
+    <script>
+
+    // var editor;
+    // KindEditor.ready(function(K) {
+    //     editor = K.create('#editor', {
+    //         themeType : 'simple',
+    //         resizeType: 1,
+    //     });
+    // });
+        $(function() {
+            var upUrl = "{:U('Admin/UploadFile/upimage')}";
+            var delUrl = "{:U('Admin/UploadFile/delete')}";
+            //封面图片
+            var img = "{$info['img']}";
+            upimage("img", "img", upUrl, delUrl, img);
+        });
+        
+    </script>
+</block>
+
+

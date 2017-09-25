@@ -1,0 +1,114 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>商品信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <td>商品图片</td>
+                                <td>商品名称</td>
+                                <td>商品规格</td>
+                                <td>商品数量</td>
+                                <td>商品价格</td>
+                                <td>状态</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <volist name="order_goods" id="v">
+                                <tr>
+                                    <td><img style="width:80px;height:80px;" src="{$v.img}"></td>
+                                    <td>{$v.name}</td>
+                                    <td>{$v.spec}</td>
+                                    <td>{$v.number}</td>
+                                    <td>{$v.price}</td>
+                                    <td>
+                                        <if condition="$v['status'] eq 1">正常</if>
+                                        <if condition="$v['status'] eq 2">退款中</if>
+                                        <if condition="$v['status'] eq 3">同意退款</if>
+                                        <if condition="$v['status'] eq 4">拒绝退款</if>
+                                    </td>
+                                </tr>
+                            </volist>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>收货信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr><td>收货人</td><td>{$order.realname}</td></tr>
+                            <tr><td>联系电话</td><td>{$order.phone}</td></tr>
+                            <tr><td>收货地址</td><td>{$order.address}</td></tr>
+                            <tr><td>运费</td><td>{$order.fee}</td></tr>
+                            <tr><td>物流名称</td><td>{$order.shipName}</td></tr>
+                            <tr><td>物流单号</td><td>{$order.shipId}</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>订单信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr><td>订单编号</td><td>{$order.orderSn}</td></tr>
+                            <tr><td>订单金额</td><td>{$order.amount}</td></tr>
+                            <tr><td>商品金额</td><td>{$order.goodsAmount}</td></tr>
+                            <tr><td>订单状态</td>
+                                <td>
+                                    <if condition="$order['status'] eq 0">待支付</if>
+                                    <if condition="$order['status'] eq 1">待发货</if>
+                                    <if condition="$order['status'] eq 2">待收货</if>
+                                    <if condition="$order['status'] eq 3">退款中</if>
+                                    <if condition="$order['status'] eq 4">交易关闭</if>
+                                    <if condition="$order['status'] eq 5">交易成功</if>
+                                </td>
+                            </tr>
+                            <tr><td>下单时间</td>
+                                <td>
+                                    <if condition="$order['createTime'] gt 0">
+                                        {$order.createTime|date="Y-m-d H:i:s",###}
+                                    </if>
+                                </td></tr>
+                            <tr><td>支付时间</td>
+                                <td>
+                                    <if condition="$order['payTime'] gt 0">
+                                        {$order.payTime|date="Y-m-d H:i:s",###}
+                                    </if>
+                                </td></tr>
+                            <tr><td>发货时间</td>
+                                <td>
+                                    <if condition="$order['shipTime'] gt 0">
+                                        {$order.shipTime|date="Y-m-d H:i:s",###}
+                                    </if>
+                                </td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+    <script>
+
+    </script>
+</block>

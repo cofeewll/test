@@ -1,0 +1,123 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>退款商品信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <td>商品图片</td>
+                                <td>商品名称</td>
+                                <td>商品规格</td>
+                                <td>商品数量</td>
+                                <td>商品价格</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td><img style="width:80px;height:80px;" src="{$goods.img}"></td>
+                                    <td>{$goods.name}</td>
+                                    <td>{$goods.spec}</td>
+                                    <td>{$goods.number}</td>
+                                    <td>{$goods.price}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>退款信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>是否已收货</td>
+                                <td>
+                                    <if condition="$refund['type'] eq 0">
+                                        <input type="radio" checked>未收货
+                                        <input type="radio" >已收货
+                                        <else/>
+                                        <input type="radio">未收货
+                                        <input type="radio" checked>已收货
+                                    </if>
+                                </td>
+                            </tr>
+                            <tr><td>申请退款金额</td><td>{$refund.amount}</td></tr>
+                            <tr><td>退款原因</td><td>{$refund.reason}</td></tr>
+                            <tr><td>退款文字说明</td><td>{$refund.remark}</td></tr>
+                            <tr>
+                                <td>图片说明</td>
+                                <td>
+                                    <img style="width:80px;height:80px;" src="{$goods.img}">
+                                </td>
+                            </tr>
+                            <!--<tr><td>运费</td><td>{$order.fee}</td></tr>-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>处理信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post">
+                            <input type="hidden" name="id" value="{$refund.id}">
+                            <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td>处理申请</td>
+                                    <td>
+                                        <if condition="$refund['status'] eq 1">
+                                            <input type="radio" name="status" value="1" checked>同意退款
+                                            <input type="radio" name="status" value="2">拒绝退款
+                                            <else/>
+                                            <input type="radio" name="status" value="1" >同意退款
+                                            <input type="radio" name="status" value="2" checked>拒绝退款
+                                        </if>
+
+                                    </td>
+                                </tr>
+                                <tr><td>实际退款金额</td><td><input type="text" class="form-control" name="realMoney" value="{$refund.realMoney}"></td></tr>
+                                <tr><td>补偿金额</td><td><input type="text" class="form-control" name="addMoney" value="{$refund.addMoney}"></td></tr>
+                                <tr><td>备注</td><td><textarea name="dealContext" class="form-control">{$refund.dealContext}</textarea></td></tr>
+                                <if condition="$refund['dealTime'] gt 0">
+                                    <tr><td>处理时间</td><td>{$refund.dealTime|date="Y-m-d H:i:s",###}</td></tr>
+                                    <else/>
+                                    <tr><td>操作</td><td><button class="btn-sm btn-primary">保存</button></td></tr>
+                                </if>
+
+                                </tbody>
+                            </table>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+    <script>
+        $("form").submit(function(){
+            $.post("{:U('doRefund')}",$(this).serialize(),function(data){
+                layer.msg(data.msg);
+            })
+            return false;
+        })
+    </script>
+</block>

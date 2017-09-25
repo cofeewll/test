@@ -1,0 +1,84 @@
+<extend name="Public:header" />
+<block name="title">
+    <title>咭咭生活-管理主页</title>
+</block>
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox-content">
+                    <form role="form1" class="form-inline">
+                        <div class="form-group">
+                            <!--<div class="col-sm-10">-->
+                            <input placeholder="开始日期" class="form-control layer-date" id="start" name="start">
+                            <input placeholder="结束日期" class="form-control layer-date" id="end" name="end">
+                            <!--</div>-->
+                        </div>
+                        <button class="btn-sm btn-primary " type="button"><i class="fa fa-search" onclick="search_on()"></i></button>
+                        <!--<button class="btn-sm btn-info " type="button"><i class="fa fa-undo" onclick="un_do()"></i></button>-->
+                    </form>
+
+                </div>
+                <div class="col-sm-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>服务商累计提现金额柱形图</h5>
+                        </div>
+                        <div class="ibox-content" style="overflow: auto;">
+                            <div class="echarts" id="echarts-bar-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="__JS__/plugins/layer/laydate/laydate.js"></script>
+    <script src="__JS__/public.js"></script>
+    <script src="__JS__/plugins/echarts/echarts-all.js"></script>
+    <script>
+        function search_on() {
+            var loading = layer.load(0, {shade: false});
+            $.post('server',$("form").serialize(),function(data){
+                layer.close(loading);
+                var school = [],school_value=[];
+                $.each(data.data,function(a,b){
+                    school.push(b.sUserName);
+                    school_value.push(b.uwMoney);
+                })
+                var t=echarts.init(document.getElementById("echarts-bar-chart")),
+                        n={
+                            title:{text:"提现统计"},
+                            tooltip:{trigger:"axis"},
+                            legend:{data:["提现金额"]},
+                            grid:{x:30,x2:40,y2:24},
+                            calculable:!0,
+                            xAxis:[
+                                {
+                                    type:"category",
+                                    data:school,
+                                }
+                            ],
+                            yAxis:[{type:"value"}],
+                            series:[
+                                {
+                                    name:"提现金额",
+                                    type:"bar",
+                                    data:school_value,
+                                },
+//                                {
+//                                    name:"充值总额",
+//                                    type:"bar",
+//                                    data:school_num,
+//                                }
+                            ]
+                        };
+                t.setOption(n),window.onresize=t.resize;
+            });
+        }
+    </script>
+    </body>
+</block>

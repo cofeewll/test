@@ -1,0 +1,163 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+   <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content">
+                        <form class="form-inline" id="form-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="title" placeholder="标题" style="width:150px;" >
+                            </div>
+
+                            <div class="input-group">
+                                <select name="type" class="form-control" style="width:150px;" >
+                                    <option value="" >文章类型</option>
+                                    <option value="1" >帮助中心</option>
+                                    <option value="2" >其它</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <select name="status" class="form-control" style="width:150px;" >
+                                    <option value="" >状态</option>
+                                    <option value="1" >正常</option>
+                                    <option value="0" >禁用</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn-sm btn-primary " type="button" id ="search-btn" ><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                             <div class="input-group">
+                                     <button class="btn-sm btn-primary " type="button" id="search-clear" ><i class="fa fa-undo"></i></button>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="jqGrid_wrapper">
+                            <table id="table" style="border-collapse: collapse"></table>
+                            <div id="pager"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+<script>
+var dataUrl = "{$dataUrl}";
+var addUrl = "{$addUrl}";
+var showUrl = "{$showUrl}";
+var editUrl = "{$editUrl}";
+var sortUrl = "{$sortUrl}";
+var delUrl = "{$delUrl}";
+$(function(){
+    $(document).ready(function() {
+        $(window).bind("resize",function(){
+            var width=$(".jqGrid_wrapper").width();
+            $("#table").setGridWidth(width);
+        })
+    });
+    $.jgrid.defaults.styleUI="Bootstrap";
+    var lastsel;
+        $("#table").jqGrid({
+            url:dataUrl,
+            datatype: "json",
+            colNames:['排序','标题','文章类型','状态','操作','ID'],
+            colModel:[
+                {name:'sorts',index:'sorts', width:50,sortable: true,align:'center',formatter: function (a, b, c) {
+                        var sort = '';
+                        sort = "<input type='text' style='width:80px;' onchange='updateSort("+c.id+",this)' onkeydown='clearFun()' class='form-control input-sm ' name='listOrder["+c.id+"]' value='" + c.sorts + "'>";
+                        return sort; 
+                    }
+                },
+                {name:'title',index:'title',editable: true,sortable: false,align:'center'},
+                {name:'type',index:'type',editable: false,sortable: false,align:'center'},
+                {name:'status',index:'status',editable: false,sortable: false,align:'center',formatter:function (a,b,c){
+                    if(a == 0){
+                        val = '<i class="fa fa-close" style="color:red"></i>';
+                    } 
+                    else{
+                        val = '<i class="fa fa-check" style="color:#00a157"></i>';
+                    } 
+                    return '<a href="javascript:void(0);" onclick="changeStatus('+c.id+','+a+')">'+val +'</a>';
+                }},
+                {width:100,sortable: false,align:'center',formatter: function (a, b, c) {
+                        var btn = '<a href="javascript:void(0);" onclick="addFun(' + c.id + ')" ><i title="编辑" class="fa fa-edit"></i></a>';
+                        if(c.type !='其它' ){
+                            btn += '&nbsp;<a href="javascript:void(0);" onclick="deleteFun(' + c.id + ')"><i title="删除" class="fa fa-trash"></i></a>';
+                        }
+                        
+                        return btn;   
+                    }
+                },
+                {name:'id',index:'id', width:55,editable: false,sortable: false,align:'center',hidden:true},
+            ],
+            rowNum:10,
+            rowList:[10,20,30],
+            pager: '#pager',
+            sortname: 'sorts',
+            viewrecords: true,
+            autowidth:true,
+            height: 'auto',
+            emptyrecords: "暂无数据",
+            sortorder: "asc",
+            caption:"文章列表&nbsp;&nbsp;<a href='javascript:void(0)' onclick='addFun()'><i class='fa fa-plus'></i>添加</a>",
+            onselectrow:true,
+            onSelectRow:function(){
+                $('#table').jqGrid('restoreRow',lastsel);
+            },
+            ondblClickRow: function(id){
+                $('#table').jqGrid('editRow',id);
+                lastsel = id;
+            }, 
+        });
+
+       $('#table').delegate('input.editable','keypress', function(e) {
+            var code = (e.keyCode ? e.keyCode : e.which);
+            if (code == 13) { //Enter keycode
+                var rowData = $('#table').getRowData(lastsel);
+
+                var title = $.trim($("#"+lastsel+"_title").val());
+                if(title == ''){
+                    layer.msg("请填写标题");
+                    return false;
+                }
+                
+                $('#table').jqGrid('saveRow',lastsel,{
+                    url: "{:U('Article/editRow')}",
+                    mtype : "POST",
+                    extraparam : {id:rowData.id},
+                    restoreAfterError: true,
+                    successfunc: function(response){
+                        layer.msg(response.responseJSON.info);
+                        if( response.responseJSON.status ){
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    },
+                    errorfunc: function(rowid, res){
+                        var data = JSON.parse(res.responseText);
+                        layer.msg(data.info);
+                    }
+                });
+            }
+        }); 
+    
+})
+
+        
+    </script>
+
+    
+
+</block>

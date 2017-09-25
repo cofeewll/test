@@ -1,0 +1,136 @@
+<extend name="Public:header" />
+<block name="title">
+    <title>唯公商城-管理主页</title>
+</block>
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content">
+                        <form role="form" class="form-inline">
+                            <div class="form-group">
+                                <input class="form-control" name="orderSn" placeholder="请输入订单编号">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="name" placeholder="请输入商品名称">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="number" placeholder="请输入用户编号">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="title" placeholder="请输入店铺名称">
+                            </div>
+                            <div class="form-group">
+                                <!--<div class="col-sm-10">-->
+                                <input placeholder="开始日期" class="form-control layer-date" id="start" name="start">
+                                <input placeholder="结束日期" class="form-control layer-date" id="end" name="end">
+                                <!--</div>-->
+                            </div>
+                            <button class="btn-sm btn-primary " type="button"><i class="fa fa-search" onclick="search_on()"></i></button>
+                            <button class="btn-sm btn-info " type="button"><i class="fa fa-undo" onclick="un_do()"></i></button>
+                            <!--<button class="btn-sm btn-warning " type="button"><i class="fa fa-download" onclick="excel()"></i></button>-->
+                        </form>
+
+                    </div>
+                    <div class="ibox-content" id="ibox-content">
+                        <div class="jqGrid_wrapper">
+                            <table id="table"></table>
+                            <div id="pager"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="__JS__/plugins/layer/laydate/laydate.js"></script>
+    <script src="__JS__/public.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).bind("resize",function(){
+                var width=$(".jqGrid_wrapper").width();
+                $("#table").setGridWidth(width);
+            })
+        });
+        $.jgrid.defaults.styleUI="Bootstrap";
+        $('#table').jqGrid({
+            url: "{:U('index')}",
+            datatype: "json",
+            colModel: [
+                {label: '订单编号', name: 'orderSn', index: 'orderSn',  align: 'center',},
+                {label: '商品名称', name: 'name', index: 'name',  align: 'center',width:"200"},
+                {label: '商品规格', name: 'spec_key_name', index: 'spec_key_name',  align: 'center',},
+                {label: '用户编号', name: 'number', index: 'number',  align: 'center',width:"100"},
+                {label: '店铺名称',  name: 'title', index: 'title',  align: 'center',},
+
+                {label: '评价内容',name: 'context', index: 'context',  align: 'center',width:"300"},
+                {label: '显示',  name: 'isShow', index: 'isShow',width:"50",align: 'center', formatter: function (a, b, c) {
+                    if (a == 0)
+                        return '<i class="fa fa-close" style="color:red"></i>';
+                    if (a == 1)
+                        return '<i class="fa fa-check" style="color: #00a157"></i>';
+                } },
+                {label: '创建时间', name: 'createTime', index: 'createTime', width: 150, align: 'center', },
+                { name: 'id', index: 'id', hidden:true},
+            ],
+            ondblClickRow: function(id){
+                var rowData = $('#table').getRowData(id);
+                layer.open({
+                    type: 2,
+                    title: '查看订单详细',
+                    shadeClose: true,
+                    shade: 0.8,
+                    area: ['1020px', '90%'],
+                    content: "{:U('detail','','')}/id/"+rowData.id,
+                });
+
+            },
+            onCellSelect: function (rowid, iCol, cellcontent, e) {
+                var rowData = $('#table').getRowData(rowid);
+                if (iCol ==7 ) {
+                    $.post("{:U('check_status')}",{id:rowData.id}, function (dat) {
+//                        dat = eval('(' + _dat + ')');
+                        if (dat.status == 0) {
+                            layer.alert(dat.msg);
+                        } else {
+                            jQuery('#table').jqGrid('setCell', rowid, dat.colname, dat.data);
+                        }
+                    });
+                }
+            },
+            shrinkToFit: true,
+            autowidth:true,
+            gridview: true,
+            mtype: 'post',
+            height: 'auto',
+            rowNum: 10,
+            rowList: [10, 20, 50, 100],
+            pager: '#pager',
+            emptyrecords: "暂无数据",
+            sortname: 'id',
+            viewrecords: true,
+            rownumbers:true,
+            //toolbar: [true,"top"],
+            sortorder: "desc",
+            caption: '评价列表&nbsp;&nbsp;<span style="color:orange;font-size: 10px;">双击行查看明细</span>'
+        });
+        $("#table") .jqGrid('setFrozenColumns')
+        function search_on(){
+
+            var url="{:U('index')}?"+$("form").serialize();
+            jQuery("#table").jqGrid('setGridParam',{url:url,page:1}).trigger("reloadGrid");
+        }
+        function un_do(){
+            $("form")[0].reset();
+            jQuery("#table").jqGrid('setGridParam',{url:"{:U('index')}",page:1}).trigger("reloadGrid");
+        }
+        function excel(){
+            var url_="{:U('excel')}?"+$("form").serialize();
+            location.href=url_;
+        }
+
+    </script>
+    </body>
+</block>

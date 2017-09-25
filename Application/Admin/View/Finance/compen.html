@@ -1,0 +1,44 @@
+<extend name="Public:header" />
+<block name="title">
+    <title>唯公商城-管理主页</title>
+</block>
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox ">
+                    <div class="ibox-content" id="ibox-content">
+                        <div class="jqGrid_wrapper">
+                            <table id="table"></table>
+                            <div id="pager"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<script src="__JS__/plugins/layer/laydate/laydate.js"></script>-->
+    <!--<script src="__JS__/public.js"></script>-->
+    <script src="__JS__/jqgrid.js"></script>
+    <script>
+        var jqgrid_coloumn=[
+            {label: '用户编号', name: 'number', index: 'number', align: 'center',},
+            {label: '补偿金额', name: 'cmoney', index: 'cmoney',  align: 'center',search: false,},
+            {label: '发放时间', name: 'createTime', index: 'createTime',  align: 'center',search: false,},
+            {label: '备注', name: 'memo', index: 'memo',  align: 'center',search: false,},
+        ];
+        var caption='商家发放补偿金列表';
+        var reurl="{:U('compen','','')}/id/"+{$id};
+        var loadComplete=function(){};
+        var ondblClickRow=function(id){
+        };
+        var onCellSelect=function(rowid, iCol, cellcontent, e){
+        };
+        var footerrow=false;
+        getGrid(jqgrid_coloumn,loadComplete,ondblClickRow,onCellSelect,"id",caption,reurl,footerrow);
+        //
+    </script>
+    </body>
+</block>

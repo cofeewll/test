@@ -1,0 +1,237 @@
+[ 2017-09-20T14:26:54+08:00 ] 127.0.0.1 /index.php/Api/Goods/getGoods?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0478s ]
+SQL: SELECT g.id,`name`,`goodsSn`,g.img,`price`,`stock`,g.sellNum,`commentNum`,`shopId`,g.detail,`title`,s.img as shopImg,s.sellNum as shopNum,`qq` FROM wg_goods g INNER JOIN wg_shop as s on s.id = g.shopId  WHERE g.id = 1 AND g.status = 1 LIMIT 1   [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0166s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 1 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_order_comment` [ RunTime:0.0310s ]
+SQL: SELECT `context`,`reply`,`spec_key_name`,`nickname`,`img`,c.createTime,`replyTime`,`imgs` FROM wg_order_comment c INNER JOIN wg_user as u on u.id = c.uid  WHERE `goodsId` = 1 AND `isShow` = 1 ORDER BY createTime desc LIMIT 3   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0312s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0800s ]
+SQL: SELECT a.name,a.sorts,b.* FROM wg_spec AS a INNER JOIN wg_spec_item AS b ON a.id = b.specId WHERE b.id IN(1,5,2,5) ORDER BY b.id [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `wg_collect` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `wg_collect` WHERE `uid` = 1 AND `goodsId` = 1 AND `type` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0156s ]
+SQL: SELECT SUM(number) AS tp_sum FROM `wg_order_goods` WHERE `goodsId` = 1 AND `addTime` = 1504195200 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(number) AS tp_sum FROM `wg_order_goods` WHERE `shopId` = 1 AND `addTime` = 1504195200 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-20T14:27:22+08:00 ] 127.0.0.1 /index.php/Api/Cart/getCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.1536s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0156s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.cid AS cid,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.qq AS qq,shop.status AS pstatus,shop.provinces AS provinces,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' ORDER BY c.createTime desc  [ RunTime:0.0010s ]
+
+[ 2017-09-20T14:28:05+08:00 ] 127.0.0.1 /index.php/Api/Cart/addCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`shopId`,`price`,`stock` FROM `wg_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT id as gsId,`key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE `goodsId` = 1 AND `key` = '1_5' LIMIT 1   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_cart` WHERE `gsId` = 7 AND `goodsId` = 1 AND `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_cart` (`shopId`,`goodsId`,`gsId`,`uid`,`price`,`number`,`createTime`,`spec_key`,`spec_key_name`) VALUES ('1','1','7','1','10.00','1','1505888885','1_5','颜色:白色 尺寸:S') [ RunTime:0.0456s ]
+
+[ 2017-09-20T14:28:15+08:00 ] 127.0.0.1 /index.php/Api/Cart/getCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.cid AS cid,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.qq AS qq,shop.status AS pstatus,shop.provinces AS provinces,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' ORDER BY c.createTime desc  [ RunTime:0.0010s ]
+SQL: DELETE FROM `wg_cart` WHERE `id` = 17 [ RunTime:0.0010s ]
+
+[ 2017-09-20T14:28:22+08:00 ] 127.0.0.1 /index.php/Api/Cart/getCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.cid AS cid,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.qq AS qq,shop.status AS pstatus,shop.provinces AS provinces,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' ORDER BY c.createTime desc  [ RunTime:0.0000s ]
+
+[ 2017-09-20T14:28:54+08:00 ] 127.0.0.1 /index.php/Api/Cart/addCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`shopId`,`price`,`stock` FROM `wg_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT id as gsId,`key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE `goodsId` = 1 AND `key` = '1_5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_cart` WHERE `gsId` = 7 AND `goodsId` = 1 AND `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_cart` (`shopId`,`goodsId`,`gsId`,`uid`,`price`,`number`,`createTime`,`spec_key`,`spec_key_name`) VALUES ('1','1','7','1','10.00','1','1505888934','1_5','颜色:白色 尺寸:S') [ RunTime:0.0000s ]
+
+[ 2017-09-20T14:29:27+08:00 ] 127.0.0.1 /index.php/Api/Cart/getCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.cid AS cid,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.qq AS qq,shop.status AS pstatus,shop.provinces AS provinces,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' ORDER BY c.createTime desc  [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_cart` WHERE `id` = 18 [ RunTime:0.0000s ]
+
+[ 2017-09-20T14:30:56+08:00 ] 127.0.0.1 /index.php/Api/Cart/addCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0280s ]
+SQL: SELECT `id`,`shopId`,`price`,`stock` FROM `wg_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT id as gsId,`key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE `goodsId` = 1 AND `key` = '1_5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_cart` WHERE `gsId` = 7 AND `goodsId` = 1 AND `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_cart` (`shopId`,`goodsId`,`gsId`,`uid`,`price`,`number`,`createTime`,`spec_key`,`spec_key_name`) VALUES ('1','1','7','1','10.00','1','1505889055','1_5','颜色:白色 尺寸:S') [ RunTime:0.0000s ]
+
+[ 2017-09-20T14:31:04+08:00 ] 127.0.0.1 /index.php/Api/Cart/getCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.cid AS cid,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.qq AS qq,shop.status AS pstatus,shop.provinces AS provinces,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' ORDER BY c.createTime desc  [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_cart` WHERE `id` = 19 [ RunTime:0.0000s ]
+
+[ 2017-09-20T14:31:49+08:00 ] 127.0.0.1 /index.php/Api/Cart/addCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`shopId`,`price`,`stock` FROM `wg_goods` WHERE `id` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT id as gsId,`key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE `goodsId` = 1 AND `key` = '1_5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_cart` WHERE `gsId` = 7 AND `goodsId` = 1 AND `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `wg_cart` (`shopId`,`goodsId`,`gsId`,`uid`,`price`,`number`,`createTime`,`spec_key`,`spec_key_name`) VALUES ('1','1','7','1','10.00','1','1505889109','1_5','颜色:白色 尺寸:S') [ RunTime:0.0010s ]
+
+[ 2017-09-20T14:31:55+08:00 ] 127.0.0.1 /index.php/Api/Cart/getCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.cid AS cid,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.qq AS qq,shop.status AS pstatus,shop.provinces AS provinces,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' ORDER BY c.createTime desc  [ RunTime:0.0010s ]
+
+[ 2017-09-20T14:32:38+08:00 ] 127.0.0.1 /index.php/Api/Cart/getCart?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT c.id AS id,c.uid AS uid,c.goodsId AS goodsId,c.shopId AS shopId,c.gsId AS gsId,c.spec_key_name AS spec_key_name,c.price AS price,c.number AS number,c.createTime AS createTime,goods.name AS name,goods.img AS img,goods.stock AS stock,goods.shipFee AS shipFee,goods.cid AS cid,goods.status AS status,shop.title AS title,shop.fullMoney AS fullMoney,shop.qq AS qq,shop.status AS pstatus,shop.provinces AS provinces,goods_spec.store AS store FROM wg_cart c LEFT JOIN wg_goods goods ON c.goodsId = goods.id LEFT JOIN wg_shop shop ON shop.id = c.shopId LEFT JOIN wg_goods_spec goods_spec ON goods_spec.id = c.gsId WHERE c.uid = '1' ORDER BY c.createTime desc  [ RunTime:0.0000s ]
+
+[ 2017-09-20T18:10:57+08:00 ] 127.0.0.1 /index.php/Api/Goods/getGoods?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJsb2dpblRpbWUiOjE1MDU3MDQ1MTZ9.ZeCWuL0-Y9seoUHR4WMWYX3DNquxZEvT8rf1W_OEkCs&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-20T18:11:13+08:00 ] 127.0.0.1 /index.php/Api/Goods/getGoods?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0130s ]
+SQL: SELECT g.id,`name`,`goodsSn`,g.img,`price`,`stock`,g.sellNum,`commentNum`,`shopId`,g.detail,`title`,s.img as shopImg,s.sellNum as shopNum,`qq` FROM wg_goods g INNER JOIN wg_shop as s on s.id = g.shopId  WHERE g.id = 1 AND g.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0430s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 1 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_order_comment` [ RunTime:0.1120s ]
+SQL: SELECT `context`,`reply`,`spec_key_name`,`nickname`,`img`,c.createTime,`replyTime`,`imgs` FROM wg_order_comment c INNER JOIN wg_user as u on u.id = c.uid  WHERE `goodsId` = 1 AND `isShow` = 1 ORDER BY createTime desc LIMIT 3   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.name,a.sorts,b.* FROM wg_spec AS a INNER JOIN wg_spec_item AS b ON a.id = b.specId WHERE b.id IN(1,5,2,5) ORDER BY b.id [ RunTime:0.0280s ]
+ERR: 1054:Unknown column 'value' in 'field list'
+ [ SQL语句 ] : SELECT `key`,`price`,`value` FROM `wg_goods_spec` WHERE `goodsId` = 1 
+ERR: 1054:Unknown column 'value' in 'field list'
+ [ SQL语句 ] : SELECT `key`,`price`,`value` FROM `wg_goods_spec` WHERE `goodsId` = 1 
+
+[ 2017-09-20T18:11:36+08:00 ] 127.0.0.1 /index.php/Api/Goods/getGoods?userAccessToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIxIiwibG9naW5UaW1lIjoxNTA1MjY4MTU2fQ.RGxWo23rW1uSTEeRln109B3FP-6TqhW8cs_vCGy10fM&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT g.id,`name`,`goodsSn`,g.img,`price`,`stock`,g.sellNum,`commentNum`,`shopId`,g.detail,`title`,s.img as shopImg,s.sellNum as shopNum,`qq` FROM wg_goods g INNER JOIN wg_shop as s on s.id = g.shopId  WHERE g.id = 1 AND g.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 1 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_order_comment` [ RunTime:0.0030s ]
+SQL: SELECT `context`,`reply`,`spec_key_name`,`nickname`,`img`,c.createTime,`replyTime`,`imgs` FROM wg_order_comment c INNER JOIN wg_user as u on u.id = c.uid  WHERE `goodsId` = 1 AND `isShow` = 1 ORDER BY createTime desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.name,a.sorts,b.* FROM wg_spec AS a INNER JOIN wg_spec_item AS b ON a.id = b.specId WHERE b.id IN(1,5,2,5) ORDER BY b.id [ RunTime:0.0000s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE `goodsId` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_collect` [ RunTime:0.1440s ]
+SQL: SELECT * FROM `wg_collect` WHERE `uid` = 1 AND `goodsId` = 1 AND `type` = 1 LIMIT 1   [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `wg_order_goods` [ RunTime:0.0160s ]
+SQL: SELECT SUM(number) AS tp_sum FROM `wg_order_goods` WHERE `goodsId` = 1 AND `addTime` = 1504195200 LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT SUM(number) AS tp_sum FROM `wg_order_goods` WHERE `shopId` = 1 AND `addTime` = 1504195200 LIMIT 1   [ RunTime:0.0010s ]
+

@@ -1,0 +1,1777 @@
+[ 2017-09-12T09:19:38+08:00 ] 127.0.0.1 /shop.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T09:19:38+08:00 ] 127.0.0.1 /shop.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T09:19:44+08:00 ] 127.0.0.1 /shop.php/Login/loginAuth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = 'shop1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-12T09:19:49+08:00 ] 127.0.0.1 /shop.php/Login/loginAuth.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_shop` WHERE `username` = 'shop1' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-12T09:19:49+08:00 ] 127.0.0.1 /shop.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-09-12T09:19:50+08:00 ] 127.0.0.1 /shop.php/Index/defaultIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: order_num D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 70 行.
+NOTIC: [8] Undefined variable: user_num D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 83 行.
+NOTIC: [8] Undefined variable: active_user D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 96 行.
+NOTIC: [8] Undefined variable: bl D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 97 行.
+NOTIC: [8] Undefined variable: message D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 182 行.
+NOTIC: [8] Undefined variable: recharge D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 224 行.
+NOTIC: [8] Undefined variable: log D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 254 行.
+NOTIC: [8] Undefined variable: date D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 295 行.
+NOTIC: [8] Undefined variable: arr D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 297 行.
+NOTIC: [8] Undefined variable: money D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 297 行.
+NOTIC: [8] Undefined variable: year D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 300 行.
+NOTIC: [8] Undefined variable: month D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 300 行.
+NOTIC: [8] Undefined variable: year D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 305 行.
+NOTIC: [8] Undefined variable: month D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\6005088cbc2a44a74243b86ff1102723.php 第 305 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:16+08:00 ] 127.0.0.1 /shop.php/Goods/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT `cid` FROM `wg_goods` WHERE `shopId` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `id` IN ('4','4','6','4')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:17+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505181857151&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-09-12T10:04:19+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0060s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0050s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 4 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0050s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 4  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:19+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=4&spec_type=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 8 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:19+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 4 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 211 行.
+
+[ 2017-09-12T10:04:23+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '测试商品4' AND `id` <> '4' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods` WHERE `goodsSn` = 'WG000004' AND `id` <> '4' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT `status` FROM `wg_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `shopId`='1',`name`='测试商品4',`goodsSn`='WG000004',`cid`='4',`price`='200.00',`stock`='200',`img`='/Uploads/images/20170907/59b0b7dd2e2eb.png',`sorts`='50',`detail`='bb',`typeId`='8',`shipFee`='0.00',`status`='1',`updateTime`='1505181863' WHERE `id` = 4 [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000004' WHERE ( id = 4 and goodsSn = '' ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 4 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 4 )  [ RunTime:0.0000s ]
+SQL: DELETE FROM `wg_goods_spec` WHERE ( goodsId = 4 ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_cart` [ RunTime:0.0040s ]
+SQL: DELETE FROM `wg_cart` WHERE ( goodsId = 4 and spec_key <> '' ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0030s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 4  [ RunTime:0.0000s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: addList D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 152 行.
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 4 AND `province` IN ('新疆维吾尔自治区','台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0000s ]
+SQL: SELECT SUM(store) AS tp_sum FROM `wg_goods_spec` WHERE `goodsId` = 4 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:04:25+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0020s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0050s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 4 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0040s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 4  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:04:25+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=4&spec_type=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 8 ) ORDER BY `sorts` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0060s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 4 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:04:25+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 4 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 211 行.
+
+[ 2017-09-12T10:04:26+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505181866385&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:04:27+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0070s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0060s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 3 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0040s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 3  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-09-12T10:04:27+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=3&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:04:28+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 3 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:04:29+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '测试商品3' AND `id` <> '3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods` WHERE `goodsSn` = 'WG000003' AND `id` <> '3' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT `status` FROM `wg_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `shopId`='1',`name`='测试商品3',`goodsSn`='WG000003',`cid`='6',`price`='10.00',`stock`='22',`img`='/Uploads/images/20170907/59b0b695b34e2.png',`sorts`='50',`detail`='bb',`typeId`='1',`shipFee`='0.00',`status`='1',`updateTime`='1505181869' WHERE `id` = 3 [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000003' WHERE ( id = 3 and goodsSn = '' ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0040s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 3 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 3 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0050s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 3  [ RunTime:0.0000s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: addList D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 152 行.
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 3 AND `province` IN ('新疆维吾尔自治区','台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0010s ]
+SQL: SELECT SUM(store) AS tp_sum FROM `wg_goods_spec` WHERE `goodsId` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `stock`='22' WHERE `id` = 3 [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:04:30+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 1 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0060s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 3 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0040s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 3  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:31+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=3&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 3 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:31+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0060s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 3 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:04:31+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505181871465&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:04:32+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0060s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 2 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0060s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:32+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=2&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:32+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:04:34+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '测试商品2' AND `id` <> '2' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods` WHERE `goodsSn` = 'WG000002' AND `id` <> '2' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT `status` FROM `wg_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `shopId`='1',`name`='测试商品2',`goodsSn`='WG000002',`cid`='4',`price`='20.00',`stock`='60',`img`='/Uploads/images/20170905/59ae823018039.jpg',`sorts`='50',`detail`='&amp;nbsp;吧',`typeId`='1',`shipFee`='0.00',`status`='1',`updateTime`='1505181874' WHERE `id` = 2 [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000002' WHERE ( id = 2 and goodsSn = '' ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0040s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 2 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0000s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: addList D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 152 行.
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 2 AND `province` IN ('新疆维吾尔自治区','台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0000s ]
+SQL: SELECT SUM(store) AS tp_sum FROM `wg_goods_spec` WHERE `goodsId` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `stock`='60' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:04:36+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 2 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0000s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:04:36+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=2&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:36+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:04:36+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505181876698&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:04:37+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0060s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0050s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0060s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 1 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0040s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:38+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=1&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0060s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-09-12T10:04:38+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 1 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:04:41+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '测试商品' AND `id` <> '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods` WHERE `goodsSn` = 'WG000001' AND `id` <> '1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0000s ]
+SQL: SELECT `status` FROM `wg_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `shopId`='1',`name`='测试商品',`goodsSn`='WG000001',`cid`='4',`price`='12.00',`stock`='22',`img`='/Uploads/images/20170905/59ae783c30015.jpg',`sorts`='25',`detail`='&lt;p&gt;
+	详细介绍
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src=&quot;/Uploads/kindeditor/image/20170905/20170905121132_14850.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;img src=&quot;/Uploads/kindeditor/image/20170911/20170911121258_59224.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;',`typeId`='1',`shipFee`='0.00',`status`='1',`updateTime`='1505181881' WHERE `id` = 1 [ RunTime:0.0156s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000001' WHERE ( id = 1 and goodsSn = '' ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0156s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 1 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0156s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: addList D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 152 行.
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 1 AND `province` IN ('台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0000s ]
+SQL: SELECT SUM(store) AS tp_sum FROM `wg_goods_spec` WHERE `goodsId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `stock`='22' WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:04:43+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0040s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0050s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 1 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0040s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:43+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=1&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:04:43+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0060s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 1 )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:04:44+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505181884154&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:05:36+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0060s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0040s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 2 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0060s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 2  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:05:36+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=2&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:05:36+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:05:41+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `wg_goods` WHERE `name` = '测试商品2' AND `id` <> '2' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods` WHERE `goodsSn` = 'WG000002' AND `id` <> '2' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\wllspace\php\wgshop\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT `status` FROM `wg_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_goods` SET `shopId`='1',`name`='测试商品2',`goodsSn`='WG000002',`cid`='4',`price`='20.00',`stock`='60',`img`='/Uploads/images/20170905/59ae823018039.jpg',`sorts`='50',`detail`='&amp;nbsp;吧',`typeId`='1',`shipFee`='0.00',`status`='1',`updateTime`='1505181941' WHERE `id` = 2 [ RunTime:0.0000s ]
+SQL: UPDATE `wg_goods` SET `goodsSn`='WG000002' WHERE ( id = 2 and goodsSn = '' ) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0030s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 2 AND `type` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0020s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] array_keys() expects parameter 1 to be array, null given D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: addList D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 152 行.
+SQL: DELETE FROM `wg_goods_ship` WHERE `goodsId` = 2 AND `province` IN ('新疆维吾尔自治区','台湾省','西藏自治区','香港特别行政区','澳门特别行政区') [ RunTime:0.0000s ]
+SQL: SELECT SUM(store) AS tp_sum FROM `wg_goods_spec` WHERE `goodsId` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wg_goods` SET `stock`='60' WHERE `id` = 2 [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:05:43+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0206s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `fid` FROM `wg_goods_cate` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 3 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0050s ]
+SQL: SELECT `path` FROM `wg_picture` WHERE `sid` = 2 AND `type` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_ship` [ RunTime:0.0050s ]
+SQL: SELECT `province`,`fee` FROM `wg_goods_ship` WHERE `goodsId` = 2  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+NOTIC: [8] Undefined variable: temp D:\wamp\www\wllspace\php\wgshop\Application\Shop\Controller\GoodsController.class.php 第 124 行.
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+NOTIC: [8] Undefined index: fee D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-09-12T10:05:43+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=2&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT GROUP_CONCAT(`key` SEPARATOR '_') AS items_id FROM `wg_goods_spec` WHERE ( goodsId = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:05:43+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0050s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 2 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:10+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505182630567&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:17:15+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 240 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 241 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:17:15+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=&spec_type=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 0 ) ORDER BY `sorts` asc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:17:15+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 211 行.
+
+[ 2017-09-12T10:17:18+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:17:18+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 211 行.
+
+[ 2017-09-12T10:17:19+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0040s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:20+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:22+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:32+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:33+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:44+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505182664147&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-09-12T10:17:49+08:00 ] 127.0.0.1 /index.php/Shop/Goods/addGoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_shop` [ RunTime:0.0050s ]
+SQL: SELECT `provinces` FROM `wg_shop` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate` WHERE `status` = 1 AND `fid` = 0 ORDER BY sorts asc,id asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_type` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_goods_type` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 240 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 241 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\wllspace\php\wgshop\Runtime\Cache\Shop\369c072fb2adede20caee87196723da4.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:17:50+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=&spec_type=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 0 ) ORDER BY `sorts` asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-09-12T10:17:50+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 211 行.
+
+[ 2017-09-12T10:17:52+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecSelect.html?goods_id=&spec_type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_spec` WHERE ( typeId = 1 ) ORDER BY `sorts` asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 2 ) ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`item` FROM `wg_spec_item` WHERE ( specId = 3 ) ORDER BY id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-09-12T10:17:52+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 211 行.
+
+[ 2017-09-12T10:17:53+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:53+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:17:58+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:18:10+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 1_6 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 2_6 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:18:12+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0020s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:18:13+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:18:14+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:18:15+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0156s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 211 行.
+
+[ 2017-09-12T10:18:18+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:18:19+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0000s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:18:20+08:00 ] 127.0.0.1 /index.php/Shop/Goods/ajaxGetSpecInput/goods_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wg_spec` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name` FROM `wg_spec`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_spec_item` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`item`,`specId` FROM `wg_spec_item`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_spec` [ RunTime:0.0030s ]
+SQL: SELECT `key`,`key_name`,`price`,`store` FROM `wg_goods_spec` WHERE ( goodsId = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+NOTIC: [8] Undefined index: 2_5 D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 230 行.
+NOTIC: [8] Undefined index: store D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 231 行.
+NOTIC: [8] Use of undefined constant price - assumed 'price' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 232 行.
+NOTIC: [8] Use of undefined constant store - assumed 'store' D:\wamp\www\wllspace\php\wgshop\Application\Common\Model\GoodsModel.class.php 第 233 行.
+
+[ 2017-09-12T10:20:14+08:00 ] 127.0.0.1 /shop.php/Goods/index.html?_search=false&nd=1505182814333&rows=10&page=1&sidx=id&sord=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wg_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wg_goods` WHERE `shopId` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wg_goods_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `wg_goods_cate`  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_goods` WHERE `shopId` = 1 LIMIT 1   [ RunTime:0.0000s ]
+

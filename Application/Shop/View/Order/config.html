@@ -1,0 +1,47 @@
+<extend name="Public:header" />
+<block name="content">
+    <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>发货信息</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form>
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr><td>姓名</td><td><input class="form-control" type="text" name="Name" value="{$data.Name}"></td></tr>
+                                <tr><td>手机号</td><td><input class="form-control" type="text" name="Mobile" value="{$data.Mobile}"></td></tr>
+                                <tr><td>选择省、市、区</td>
+                                    <td>
+                                        <select id="cmbProvince" name="ProvinceName" class="form-control" style="width:30%;display:inline;"></select>
+                                        <select id="cmbCity" name="CityName" class="form-control" style="width:30%;display:inline;"></select>
+                                        <select id="cmbArea" name="ExpAreaName" class="form-control" style="width:30%;display:inline;"></select>
+                                    </td>
+                                </tr>
+                            <tr><td>详细地址</td><td><textarea class="form-control" name="Address">{$data.Address}</textarea></td></tr>
+                            <tr>
+                                <td>操作</td>
+                                <td><button type="button" class="btn-sm btn-primary" onclick="sure()">保存</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script type="text/javascript" src="__ADMIN__/js/jsAddress.js"></script>
+    <script>
+        addressInit('cmbProvince', 'cmbCity', 'cmbArea',"{$data.ProvinceName}","{$data.CityName}","{$data.ExpAreaName}");
+        function sure(){
+            $.post("{:U('config')}",$("form").serialize(),function(data){
+                layer.msg(data.msg);
+            })
+        }
+    </script>
+</block>
